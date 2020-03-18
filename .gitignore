@@ -1,0 +1,8 @@
+#ignore all log file
+*.log
+obj
+bin
+lib
+EXAMPLES/
+CUBIT_GEOCUBIT/
+DATA/

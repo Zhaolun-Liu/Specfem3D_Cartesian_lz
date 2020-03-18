@@ -1,0 +1,396 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BROADCAST_AFTER_READ	postprocess_sensitivity_kernels/clip_sem.f90	/^  logical :: BROADCAST_AFTER_READ$/;"	v	program:clip_sem
+BROADCAST_AFTER_READ	postprocess_sensitivity_kernels/combine_sem.f90	/^  logical :: BROADCAST_AFTER_READ$/;"	v	program:combine_sem
+BROADCAST_AFTER_READ	postprocess_sensitivity_kernels/smooth_sem.F90	/^  logical :: BROADCAST_AFTER_READ,/;"	v	program:smooth_sem
+BROADCAST_AFTER_READ	sum_kernels.f90	/^  logical :: BROADCAST_AFTER_READ$/;"	v	program:sum_kernels
+BROADCAST_AFTER_READ	sum_preconditioned_kernels.f90	/^  logical :: BROADCAST_AFTER_READ$/;"	v	program:sum_preconditioned_kernels
+Container	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer(kind=8) :: Container$/;"	v	program:smooth_sem
+DIR	Makefile	/^DIR = tomography$/;"	m
+DIR	postprocess_sensitivity_kernels/Makefile	/^DIR = tomography\/postprocess_sensitivity_kernels$/;"	m
+FC_FUNC_	postprocess_sensitivity_kernels/smooth_sem_cuda_stubs.c	/^void FC_FUNC_(compute_smooth,$/;"	f
+FC_FUNC_	postprocess_sensitivity_kernels/smooth_sem_cuda_stubs.c	/^void FC_FUNC_(get_smooth,$/;"	f
+FC_FUNC_	postprocess_sensitivity_kernels/smooth_sem_cuda_stubs.c	/^void FC_FUNC_(initialize_cuda_device,$/;"	f
+FC_FUNC_	postprocess_sensitivity_kernels/smooth_sem_cuda_stubs.c	/^void FC_FUNC_(prepare_gpu,$/;"	f
+INFO_CUDA_SEM	postprocess_sensitivity_kernels/rules.mk	/^INFO_CUDA_SEM="building xsmooth_sem with CUDA support"$/;"	m
+INFO_CUDA_SEM	postprocess_sensitivity_kernels/rules.mk	/^INFO_CUDA_SEM="building xsmooth_sem without CUDA support"$/;"	m
+INPUT_KERNELS_DIR_NAME	model_update.f90	/^  character(len=MAX_STRING_LEN) :: INPUT_KERNELS_DIR_NAME /;"	v	program:model_update
+LOCAL_PATH_NEW_NAME	model_update.f90	/^  character(len=MAX_STRING_LEN) :: LOCAL_PATH_NEW_NAME /;"	v	program:model_update
+MAX_KERNEL_NAMES	postprocess_sensitivity_kernels/postprocess_par.f90	/^  integer,parameter :: MAX_KERNEL_NAMES /;"	v	module:postprocess_par
+MAX_KERNEL_PATHS	postprocess_sensitivity_kernels/postprocess_par.f90	/^  integer,parameter :: MAX_KERNEL_PATHS /;"	v	module:postprocess_par
+MAX_NODE_LIST	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer,parameter :: MAX_NODE_LIST /;"	v	program:smooth_sem
+MINMAX_THRESHOLD_NEW	model_update.f90	/^  logical, parameter :: MINMAX_THRESHOLD_NEW /;"	v	program:model_update
+MINMAX_THRESHOLD_OLD	model_update.f90	/^  logical, parameter :: MINMAX_THRESHOLD_OLD /;"	v	program:model_update
+NARGS	postprocess_sensitivity_kernels/clip_sem.f90	/^  integer, parameter :: NARGS /;"	v	program:clip_sem
+NARGS	postprocess_sensitivity_kernels/combine_sem.f90	/^  integer, parameter :: NARGS /;"	v	program:combine_sem
+NARGS	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer, parameter :: NARGS /;"	v	program:smooth_sem
+NGLL	postprocess_sensitivity_kernels/smooth_cuda.h	31;"	d
+NGLL2	postprocess_sensitivity_kernels/smooth_cuda.h	33;"	d
+NGLL3	postprocess_sensitivity_kernels/smooth_cuda.h	34;"	d
+NGLLX	postprocess_sensitivity_kernels/smooth_cuda.h	32;"	d
+NGLOB	postprocess_sensitivity_kernels/postprocess_par.f90	/^  integer :: NSPEC, NGLOB$/;"	v	module:postprocess_par
+NGLOB	tomography_par.f90	/^  integer :: NSPEC, NGLOB$/;"	v	module:tomography_par
+NGLOB_N	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: NSPEC_N, NGLOB_N$/;"	v	program:smooth_sem
+NSPEC	postprocess_sensitivity_kernels/postprocess_par.f90	/^  integer :: NSPEC,/;"	v	module:postprocess_par
+NSPEC	tomography_par.f90	/^  integer :: NSPEC,/;"	v	module:tomography_par
+NSPEC_N	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: NSPEC_N,/;"	v	program:smooth_sem
+OUTPUT_STATISTICS_DIR_NAME	model_update.f90	/^  character(len=MAX_STRING_LEN) :: OUTPUT_STATISTICS_DIR_NAME /;"	v	program:model_update
+RHO_MAX	model_update.f90	/^  real(kind=CUSTOM_REAL),parameter :: RHO_MAX /;"	v	program:model_update
+RHO_MIN	model_update.f90	/^  real(kind=CUSTOM_REAL),parameter :: RHO_MIN /;"	v	program:model_update
+S	postprocess_sensitivity_kernels/rules.mk	/^$(tomography\/postprocess_sensitivity_kernels_OBJECTS): S := ${S_TOP}\/src\/tomography\/postprocess_sensitivity_kernels$/;"	m
+S	postprocess_sensitivity_kernels/rules.mk	/^S := ${S_TOP}\/src\/tomography\/postprocess_sensitivity_kernels$/;"	m
+S	rules.mk	/^$(tomography_OBJECTS): S := ${S_TOP}\/src\/tomography$/;"	m
+S	rules.mk	/^S := ${S_TOP}\/src\/tomography$/;"	m
+Smooth_data	postprocess_sensitivity_kernels/smooth_cuda.h	/^} Smooth_data;$/;"	t	typeref:struct:Smooth_data_
+Smooth_data_	postprocess_sensitivity_kernels/smooth_cuda.h	/^typedef struct Smooth_data_ {$/;"	s
+THRESHOLD_RHO	model_update.f90	/^  logical, parameter :: THRESHOLD_RHO /;"	v	program:model_update
+USE_GPU	postprocess_sensitivity_kernels/smooth_sem.F90	/^  logical :: BROADCAST_AFTER_READ, USE_GPU$/;"	v	program:smooth_sem
+USE_OLD_GRADIENT	tomography_par.f90	/^  logical :: USE_OLD_GRADIENT$/;"	v	module:tomography_kernels_tiso_cg
+VP_MAX	model_update.f90	/^  real(kind=CUSTOM_REAL),parameter :: VP_MAX /;"	v	program:model_update
+VP_MIN	model_update.f90	/^  real(kind=CUSTOM_REAL),parameter :: VP_MIN /;"	v	program:model_update
+VS_MAX	model_update.f90	/^  real(kind=CUSTOM_REAL),parameter :: VS_MAX /;"	v	program:model_update
+VS_MIN	model_update.f90	/^  real(kind=CUSTOM_REAL),parameter :: VS_MIN /;"	v	program:model_update
+add_model	add_model_iso.f90	/^program add_model$/;"	p
+adios_model_update_OBJECTS	rules.mk	/^adios_model_update_OBJECTS= \\$/;"	m
+adios_model_update_SHARED_OBJECTS	rules.mk	/^adios_model_update_SHARED_OBJECTS = \\$/;"	m
+adios_model_update_SHARED_STUBS	rules.mk	/^adios_model_update_SHARED_STUBS = \\$/;"	m
+adios_model_update_STUBS	rules.mk	/^adios_model_update_STUBS = \\$/;"	m
+alpha0	add_model_iso.f90	/^  real(kind=CUSTOM_REAL) :: beta1,beta0,rho1,rho0,alpha1,alpha0$/;"	v	program:add_model
+alpha1	add_model_iso.f90	/^  real(kind=CUSTOM_REAL) :: beta1,beta0,rho1,rho0,alpha1,/;"	v	program:add_model
+arg	postprocess_sensitivity_kernels/clip_sem.f90	/^  character(len=MAX_STRING_LEN) :: arg(/;"	v	program:clip_sem
+arg	postprocess_sensitivity_kernels/combine_sem.f90	/^  character(len=MAX_STRING_LEN) :: arg(/;"	v	program:combine_sem
+arg	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN) :: arg(/;"	v	program:smooth_sem
+beta0	add_model_iso.f90	/^  real(kind=CUSTOM_REAL) :: beta1,beta0,/;"	v	program:add_model
+beta1	add_model_iso.f90	/^  real(kind=CUSTOM_REAL) :: beta1,/;"	v	program:add_model
+bk	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: tk, bk$/;"	v	program:smooth_sem
+center_x	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: center_x,/;"	v	program:smooth_sem
+center_x0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: center_x0,/;"	v	program:smooth_sem
+center_y	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: center_x, center_y,/;"	v	program:smooth_sem
+center_y0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: center_x0, center_y0,/;"	v	program:smooth_sem
+center_z	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: center_x, center_y, center_z$/;"	v	program:smooth_sem
+center_z0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: center_x0, center_y0, center_z0$/;"	v	program:smooth_sem
+clip_sem	postprocess_sensitivity_kernels/clip_sem.f90	/^program clip_sem$/;"	p
+combine_sem	postprocess_sensitivity_kernels/combine_sem.f90	/^program combine_sem$/;"	p
+combine_sem_array	postprocess_sensitivity_kernels/combine_sem.f90	/^subroutine combine_sem_array(/;"	s
+compute_jacobian	compute_kernel_integral.f90	/^  subroutine compute_jacobian(/;"	s
+compute_kernel_integral_iso	compute_kernel_integral.f90	/^  subroutine compute_kernel_integral_iso(/;"	s
+compute_kernel_integral_tiso	compute_kernel_integral.f90	/^  subroutine compute_kernel_integral_tiso(/;"	s
+compute_kernel_integral_tiso_iso	compute_kernel_integral.f90	/^  subroutine compute_kernel_integral_tiso_iso(/;"	s
+cuda_smooth_sem_DEVICE_OBJ	postprocess_sensitivity_kernels/rules.mk	/^cuda_smooth_sem_DEVICE_OBJ = \\$/;"	m
+cuda_smooth_sem_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^cuda_smooth_sem_OBJECTS = \\$/;"	m
+cuda_smooth_sem_STUBS	postprocess_sensitivity_kernels/rules.mk	/^cuda_smooth_sem_STUBS = \\$/;"	m
+cx	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: cx,/;"	v	program:smooth_sem
+cx0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: cx0,/;"	v	program:smooth_sem
+cy	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: cx, cy,/;"	v	program:smooth_sem
+cy0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: cx0, cy0,/;"	v	program:smooth_sem
+cz	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: cx, cy, cz$/;"	v	program:smooth_sem
+cz0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: cx0, cy0, cz0$/;"	v	program:smooth_sem
+dat	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: dat,/;"	v	program:smooth_sem
+dat_smooth	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: dat,dat_smooth$/;"	v	program:smooth_sem
+data_smooth	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw * data_smooth;$/;"	m	struct:Smooth_data_
+dbetaiso	add_model_iso.f90	/^  real(kind=CUSTOM_REAL) :: dbetaiso,/;"	v	program:add_model
+dbulk	add_model_iso.f90	/^  real(kind=CUSTOM_REAL) :: dbetaiso,dbulk$/;"	v	program:add_model
+dim_x	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: dim_x,/;"	v	program:smooth_sem
+dim_y	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: dim_x,dim_y,/;"	v	program:smooth_sem
+dim_z	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: dim_x,dim_y,dim_z$/;"	v	program:smooth_sem
+dist_h	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: dist_h,/;"	v	program:smooth_sem
+dist_v	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: dist_h,dist_v$/;"	v	program:smooth_sem
+distance_max_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: distance_min_glob,distance_max_glob$/;"	v	program:smooth_sem
+distance_min_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: distance_min_glob,/;"	v	program:smooth_sem
+do_include_slice	postprocess_sensitivity_kernels/smooth_sem.F90	/^  logical :: do_include_slice$/;"	v	program:smooth_sem
+dummy	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: dummy /;"	v	program:smooth_sem
+element_size	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: element_size$/;"	v	program:smooth_sem
+elemsize_max_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: elemsize_min_glob,elemsize_max_glob$/;"	v	program:smooth_sem
+elemsize_min_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: elemsize_min_glob,/;"	v	program:smooth_sem
+exp_val	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: exp_val,/;"	v	program:smooth_sem
+factor	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: exp_val,factor$/;"	v	program:smooth_sem
+filename	postprocess_sensitivity_kernels/clip_sem.f90	/^  character(len=MAX_STRING_LEN) :: input_dir,output_dir,filename$/;"	v	program:clip_sem
+fname	model_update.f90	/^  character(len=MAX_STRING_LEN) :: fname$/;"	v	program:model_update
+get_cg_direction_tiso	get_cg_direction.f90	/^  subroutine get_cg_direction_tiso(/;"	s
+get_distance_vec	postprocess_sensitivity_kernels/smooth_sem.F90	/^  subroutine get_distance_vec(/;"	s	program:smooth_sem
+get_external_mesh	model_update.f90	/^subroutine get_external_mesh(/;"	s
+get_sd_direction_iso	get_sd_direction.f90	/^  subroutine get_sd_direction_iso(/;"	s
+get_sd_direction_tiso	get_sd_direction.f90	/^  subroutine get_sd_direction_tiso(/;"	s
+h_criterion	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw h_criterion;$/;"	m	struct:Smooth_data_
+i	add_model_iso.f90	/^  in/;"	v	program:add_model
+i	model_update.f90	/^  in/;"	v	program:model_update
+i	postprocess_sensitivity_kernels/clip_sem.f90	/^  in/;"	v	program:clip_sem
+i	postprocess_sensitivity_kernels/combine_sem.f90	/^  in/;"	v	program:combine_sem
+i	postprocess_sensitivity_kernels/smooth_sem.F90	/^  in/;"	v	program:smooth_sem
+ibool	postprocess_sensitivity_kernels/postprocess_par.f90	/^  integer, dimension(:,:,:,:),allocatable :: ibool$/;"	v	module:postprocess_par
+ibool	tomography_par.f90	/^  integer, dimension(:,:,:,:),allocatable :: ibool$/;"	v	module:tomography_par
+icounter	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: icounter,/;"	v	program:smooth_sem
+ier	add_model_iso.f90	/^  integer :: i,j,k,ispec,ier$/;"	v	program:add_model
+ier	model_update.f90	/^  integer :: ier$/;"	v	program:model_update
+ier	postprocess_sensitivity_kernels/clip_sem.f90	/^  integer :: ier,/;"	v	program:clip_sem
+ier	postprocess_sensitivity_kernels/combine_sem.f90	/^  integer :: i,ier,/;"	v	program:combine_sem
+ier	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: i,j,k,iglob,ier,/;"	v	program:smooth_sem
+ier	sum_kernels.f90	/^  integer :: ier$/;"	v	program:sum_kernels
+ier	sum_preconditioned_kernels.f90	/^  integer :: ier$/;"	v	program:sum_preconditioned_kernels
+iglob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: i,j,k,iglob,/;"	v	program:smooth_sem
+iker	postprocess_sensitivity_kernels/clip_sem.f90	/^  integer :: ier, iker,/;"	v	program:clip_sem
+iker	postprocess_sensitivity_kernels/combine_sem.f90	/^  integer :: i,ier,iker$/;"	v	program:combine_sem
+initialize	add_model_iso.f90	/^subroutine initialize(/;"	s
+initialize	model_update.f90	/^subroutine initialize(/;"	s
+input_dir	postprocess_sensitivity_kernels/clip_sem.f90	/^  character(len=MAX_STRING_LEN) :: input_dir,/;"	v	program:clip_sem
+input_dir	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN) :: kernel_name, input_dir,/;"	v	program:smooth_sem
+input_file	postprocess_sensitivity_kernels/combine_sem.f90	/^  character(len=MAX_STRING_LEN) :: sline,prname_lp,output_dir,input_file$/;"	v	program:combine_sem
+inum	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: i,j,k,iglob,ier,ispec2,ispec,inum$/;"	v	program:smooth_sem
+invert_hess	sum_preconditioned_kernels.f90	/^subroutine invert_hess(/;"	s
+iproc	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: iproc,/;"	v	program:smooth_sem
+ispec	add_model_iso.f90	/^  integer :: i,j,k,ispec,/;"	v	program:add_model
+ispec	model_update.f90	/^  integer :: i,j,k,ispec$/;"	v	program:model_update
+ispec	postprocess_sensitivity_kernels/clip_sem.f90	/^  integer :: ier, iker,nker,i,j,k,ispec$/;"	v	program:clip_sem
+ispec	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: i,j,k,iglob,ier,ispec2/;"	v	program:smooth_sem
+ispec2	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: i,j,k,iglob,ier,ispec2,/;"	v	program:smooth_sem
+j	add_model_iso.f90	/^  integer :: i,j,/;"	v	program:add_model
+j	model_update.f90	/^  integer :: i,j,/;"	v	program:model_update
+j	postprocess_sensitivity_kernels/clip_sem.f90	/^  integer :: ier, iker,nker,i,j,/;"	v	program:clip_sem
+j	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: i,j,/;"	v	program:smooth_sem
+k	add_model_iso.f90	/^  integer :: i,j,k,/;"	v	program:add_model
+k	model_update.f90	/^  integer :: i,j,k,/;"	v	program:model_update
+k	postprocess_sensitivity_kernels/clip_sem.f90	/^  integer :: ier, ike/;"	v	program:clip_sem
+k	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: i,j,k,/;"	v	program:smooth_sem
+kernel_beta	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: kernel_bulk,kernel_beta,/;"	v	module:tomography_kernels_iso
+kernel_betah	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: kernel_bulk,kernel_betav,kernel_betah,/;"	v	module:tomography_kernels_tiso
+kernel_betah_old	tomography_par.f90	/^        kernel_bulk_old,kernel_betav_old,kernel_betah_old,/;"	v	module:tomography_kernels_tiso_cg
+kernel_betav	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: kernel_bulk,kernel_betav,/;"	v	module:tomography_kernels_tiso
+kernel_betav_old	tomography_par.f90	/^        kernel_bulk_old,kernel_betav_old,/;"	v	module:tomography_kernels_tiso_cg
+kernel_bulk	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: kernel_bulk,/;"	v	module:tomography_kernels_iso
+kernel_bulk	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: kernel_bulk,/;"	v	module:tomography_kernels_tiso
+kernel_bulk_old	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: &$/;"	v	module:tomography_kernels_tiso_cg
+kernel_eta	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: kernel_bulk,kernel_betav,kernel_betah,kernel_eta$/;"	v	module:tomography_kernels_tiso
+kernel_eta_old	tomography_par.f90	/^        kernel_bulk_old,kernel_betav_old,kernel_betah_old,kernel_eta_old$/;"	v	module:tomography_kernels_tiso_cg
+kernel_list	sum_kernels.f90	/^  character(len=MAX_STRING_LEN) :: kernel_list(/;"	v	program:sum_kernels
+kernel_list	sum_preconditioned_kernels.f90	/^  character(len=MAX_STRING_LEN) :: kernel_list(/;"	v	program:sum_preconditioned_kernels
+kernel_name	postprocess_sensitivity_kernels/clip_sem.f90	/^  character(len=MAX_STRING_LEN) :: kernel_names/;"	v	program:clip_sem
+kernel_name	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN) :: kernel_name,/;"	v	program:smooth_sem
+kernel_name	sum_kernels.f90	/^  character(len=MAX_STRING_LEN) :: sline, kernel_name,/;"	v	program:sum_kernels
+kernel_name	sum_preconditioned_kernels.f90	/^  character(len=MAX_STRING_LEN) :: sline, kernel_name,/;"	v	program:sum_preconditioned_kernels
+kernel_names	postprocess_sensitivity_kernels/clip_sem.f90	/^  character(len=MAX_STRING_LEN) :: kernel_names(/;"	v	program:clip_sem
+kernel_names	postprocess_sensitivity_kernels/combine_sem.f90	/^  character(len=MAX_STRING_LEN) :: kernel_paths(MAX_KERNEL_PATHS), kernel_names(/;"	v	program:combine_sem
+kernel_names	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN) :: kernel_names(/;"	v	program:smooth_sem
+kernel_names_comma_delimited	postprocess_sensitivity_kernels/clip_sem.f90	/^  character(len=MAX_STRING_LEN) :: kernel_names_comma_delimited,/;"	v	program:clip_sem
+kernel_names_comma_delimited	postprocess_sensitivity_kernels/combine_sem.f90	/^  character(len=MAX_STRING_LEN) :: kernel_paths(MAX_KERNEL_PATHS), kernel_names(MAX_KERNEL_PATHS), &$/;"	v	program:combine_sem
+kernel_names_comma_delimited	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN) :: kernel_names_comma_delimited$/;"	v	program:smooth_sem
+kernel_paths	postprocess_sensitivity_kernels/combine_sem.f90	/^  character(len=MAX_STRING_LEN) :: kernel_paths(/;"	v	program:combine_sem
+kernel_rho	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: kernel_bulk,kernel_beta,kernel_rho$/;"	v	module:tomography_kernels_iso
+ks_file	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN*2) :: ks_file$/;"	v	program:smooth_sem
+local_data_file	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN*2) :: local_data_file$/;"	v	program:smooth_sem
+m_file	model_update.f90	/^  character(len=MAX_STRING_LEN*2) :: m_file$/;"	v	program:model_update
+max_new	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: max_old,max_new,/;"	v	program:smooth_sem
+max_new_all	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: max_old,max_new,max_old_all,max_new_all$/;"	v	program:smooth_sem
+max_old	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: max_old,/;"	v	program:smooth_sem
+max_old_all	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: max_old,max_new,max_old_all,/;"	v	program:smooth_sem
+max_val	postprocess_sensitivity_kernels/clip_sem.f90	/^  double precision :: min_val, max_val$/;"	v	program:clip_sem
+min_new	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: min_old,min_new,/;"	v	program:smooth_sem
+min_new_all	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: min_old,min_new,min_old_all,min_new_all$/;"	v	program:smooth_sem
+min_old	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: min_old,/;"	v	program:smooth_sem
+min_old_all	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: min_old,min_new,min_old_all,/;"	v	program:smooth_sem
+min_val	postprocess_sensitivity_kernels/clip_sem.f90	/^  double precision :: min_val,/;"	v	program:clip_sem
+model_dbeta	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_dbulk,model_dbeta,/;"	v	module:tomography_kernels_iso
+model_dbetah	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_dbulk,model_dbetah,/;"	v	module:tomography_kernels_tiso
+model_dbetah_old	tomography_par.f90	/^        model_dbulk_old,model_dbetah_old,/;"	v	module:tomography_kernels_tiso_cg
+model_dbetav	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_dbulk,model_dbetah,model_dbetav,/;"	v	module:tomography_kernels_tiso
+model_dbetav_old	tomography_par.f90	/^        model_dbulk_old,model_dbetah_old,model_dbetav_old,/;"	v	module:tomography_kernels_tiso_cg
+model_dbulk	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_dbulk,/;"	v	module:tomography_kernels_iso
+model_dbulk	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_dbulk,/;"	v	module:tomography_kernels_tiso
+model_dbulk_old	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: &$/;"	v	module:tomography_kernels_tiso_cg
+model_deta	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_dbulk,model_dbetah,model_dbetav,model_deta$/;"	v	module:tomography_kernels_tiso
+model_deta_old	tomography_par.f90	/^        model_dbulk_old,model_dbetah_old,model_dbetav_old,model_deta_old$/;"	v	module:tomography_kernels_tiso_cg
+model_drho	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_dbulk,model_dbeta,model_drho$/;"	v	module:tomography_kernels_iso
+model_eta	tomography_par.f90	/^        model_vpv,model_vph,model_vsv,model_vsh,model_eta,/;"	v	module:tomography_model_tiso
+model_eta_new	tomography_par.f90	/^        model_vpv_new,model_vph_new,model_vsv_new,model_vsh_new,model_eta_new,/;"	v	module:tomography_model_tiso
+model_rho	tomography_par.f90	/^        model_vpv,model_vph,model_vsv,model_vsh,model_eta,model_rho$/;"	v	module:tomography_model_tiso
+model_rho	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_vp,model_vs,model_rho$/;"	v	module:tomography_model_iso
+model_rho_new	tomography_par.f90	/^        model_vpv_new,model_vph_new,model_vsv_new,model_vsh_new,model_eta_new,model_rho_new$/;"	v	module:tomography_model_tiso
+model_rho_new	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_vp_new,model_vs_new,model_rho_new$/;"	v	module:tomography_model_iso
+model_update	model_update.f90	/^program model_update$/;"	p
+model_vp	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_vp,/;"	v	module:tomography_model_iso
+model_vp_new	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_vp_new,/;"	v	module:tomography_model_iso
+model_vph	tomography_par.f90	/^        model_vpv,model_vph,/;"	v	module:tomography_model_tiso
+model_vph_new	tomography_par.f90	/^        model_vpv_new,model_vph_new,/;"	v	module:tomography_model_tiso
+model_vpv	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: &$/;"	v	module:tomography_model_tiso
+model_vpv_new	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: &$/;"	v	module:tomography_model_tiso
+model_vs	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_vp,model_vs,/;"	v	module:tomography_model_iso
+model_vs_new	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: model_vp_new,model_vs_new,/;"	v	module:tomography_model_iso
+model_vsh	tomography_par.f90	/^        model_vpv,model_vph,model_vsv,model_vsh,/;"	v	module:tomography_model_tiso
+model_vsh_new	tomography_par.f90	/^        model_vpv_new,model_vph_new,model_vsv_new,model_vsh_new,/;"	v	module:tomography_model_tiso
+model_vsv	tomography_par.f90	/^        model_vpv,model_vph,model_vsv,/;"	v	module:tomography_model_tiso
+model_vsv_new	tomography_par.f90	/^        model_vpv_new,model_vph_new,model_vsv_new,/;"	v	module:tomography_model_tiso
+myrank	postprocess_sensitivity_kernels/postprocess_par.f90	/^  integer :: myrank,/;"	v	module:postprocess_par
+myrank	tomography_par.f90	/^  integer :: myrank,/;"	v	module:tomography_par
+ncuda_devices	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: iproc,ncuda_devices$/;"	v	program:smooth_sem
+nker	postprocess_sensitivity_kernels/clip_sem.f90	/^  integer :: ier, iker,nker,/;"	v	program:clip_sem
+nker	postprocess_sensitivity_kernels/combine_sem.f90	/^  integer :: npath,nker$/;"	v	program:combine_sem
+nker	postprocess_sensitivity_kernels/smooth_cuda.h	/^int nker;$/;"	m	struct:Smooth_data_
+nker	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: nker$/;"	v	program:smooth_sem
+nker	sum_kernels.f90	/^  integer :: nker$/;"	v	program:sum_kernels
+nker	sum_preconditioned_kernels.f90	/^  integer :: nker$/;"	v	program:sum_preconditioned_kernels
+node_list	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: node_list(/;"	v	program:smooth_sem
+norm	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x0, y0, z0, norm,/;"	v	program:smooth_sem
+norm_h	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x0, y0, z0, norm, norm_h,/;"	v	program:smooth_sem
+norm_v	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x0, y0, z0, norm, norm_h, norm_v$/;"	v	program:smooth_sem
+normalisation	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw * normalisation;$/;"	m	struct:Smooth_data_
+npath	postprocess_sensitivity_kernels/combine_sem.f90	/^  integer :: npath,/;"	v	program:combine_sem
+nspec_me	postprocess_sensitivity_kernels/smooth_cuda.h	/^int nspec_me;$/;"	m	struct:Smooth_data_
+num_slices	postprocess_sensitivity_kernels/smooth_sem.F90	/^  integer :: icounter,num_slices$/;"	v	program:smooth_sem
+output_dir	postprocess_sensitivity_kernels/clip_sem.f90	/^  character(len=MAX_STRING_LEN) :: input_dir,output_dir,/;"	v	program:clip_sem
+output_dir	postprocess_sensitivity_kernels/combine_sem.f90	/^  character(len=MAX_STRING_LEN) :: sline,prname_lp,output_dir,/;"	v	program:combine_sem
+output_dir	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN) :: kernel_name, input_dir, output_dir$/;"	v	program:smooth_sem
+parse_kernel_names	postprocess_sensitivity_kernels/parse_kernel_names.f90	/^subroutine parse_kernel_names(/;"	s
+postprocess_par	postprocess_sensitivity_kernels/postprocess_par.f90	/^module postprocess_par$/;"	m
+postprocess_sensitivity_kernels_MODULES	postprocess_sensitivity_kernels/rules.mk	/^tomography\/postprocess_sensitivity_kernels_MODULES = \\$/;"	m
+postprocess_sensitivity_kernels_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^tomography\/postprocess_sensitivity_kernels_OBJECTS = \\$/;"	m
+postprocess_sensitivity_kernels_SHARED_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^tomography\/postprocess_sensitivity_kernels_SHARED_OBJECTS = \\$/;"	m
+postprocess_sensitivity_kernels_TARGETS	postprocess_sensitivity_kernels/rules.mk	/^tomography\/postprocess_sensitivity_kernels_TARGETS = \\$/;"	m
+prname_lp	postprocess_sensitivity_kernels/combine_sem.f90	/^  character(len=MAX_STRING_LEN) :: sline,prname_lp,/;"	v	program:combine_sem
+prname_lp	postprocess_sensitivity_kernels/smooth_sem.F90	/^  character(len=MAX_STRING_LEN) :: prname_lp$/;"	v	program:smooth_sem
+prname_lp	sum_kernels.f90	/^  character(len=MAX_STRING_LEN) :: sline, kernel_name,prname_lp$/;"	v	program:sum_kernels
+prname_lp	sum_preconditioned_kernels.f90	/^  character(len=MAX_STRING_LEN) :: sline, kernel_name,prname_lp$/;"	v	program:sum_preconditioned_kernels
+read_kernels_cg_tiso_old	read_kernels_cg.f90	/^subroutine read_kernels_cg_tiso_old(/;"	s
+read_kernels_iso	read_kernels.f90	/^subroutine read_kernels_iso(/;"	s
+read_kernels_tiso	read_kernels.f90	/^subroutine read_kernels_tiso(/;"	s
+read_model_database	read_model.f90	/^subroutine read_model_database(/;"	s
+read_model_iso	read_model.f90	/^subroutine read_model_iso(/;"	s
+read_model_tiso	read_model.f90	/^subroutine read_model_tiso(/;"	s
+read_parameters_tomo	read_parameters_tomo.f90	/^subroutine read_parameters_tomo(/;"	s
+realw	postprocess_sensitivity_kernels/smooth_cuda.h	/^typedef float realw;$/;"	t
+realw	postprocess_sensitivity_kernels/smooth_sem_cuda_stubs.c	/^typedef float realw;$/;"	t	file:
+realw_const_p	postprocess_sensitivity_kernels/smooth_cuda.h	/^typedef const realw* __restrict__ realw_const_p;$/;"	t
+realw_p	postprocess_sensitivity_kernels/smooth_cuda.h	/^typedef realw* __restrict__ realw_p;$/;"	t
+rho0	add_model_iso.f90	/^  real(kind=CUSTOM_REAL) :: beta1,beta0,rho1,rho0,/;"	v	program:add_model
+rho1	add_model_iso.f90	/^  real(kind=CUSTOM_REAL) :: beta1,beta0,rho1,/;"	v	program:add_model
+rhomax_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: rhomin_before, rhomax_before, rhomin_after, rhomax_after$/;"	v	program:model_update
+rhomax_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: rhomin_before, rhomax_before,/;"	v	program:model_update
+rhomax_new_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: rhomin_new_before, rhomax_new_before, rhomin_new_after, rhomax_new_after$/;"	v	program:model_update
+rhomax_new_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: rhomin_new_before, rhomax_new_before,/;"	v	program:model_update
+rhomin_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: rhomin_before, rhomax_before, rhomin_after,/;"	v	program:model_update
+rhomin_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: rhomin_before,/;"	v	program:model_update
+rhomin_new_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: rhomin_new_before, rhomax_new_before, rhomin_new_after,/;"	v	program:model_update
+rhomin_new_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: rhomin_new_before,/;"	v	program:model_update
+save_external_bin_m_up	save_external_bin_m_up.f90	/^  subroutine save_external_bin_m_up(/;"	s
+save_new_databases	model_update.f90	/^subroutine save_new_databases(/;"	s
+sem_array	postprocess_sensitivity_kernels/clip_sem.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: sem_array$/;"	v	program:clip_sem
+sigma_h	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h,/;"	v	program:smooth_sem
+sigma_h2	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h, sigma_h2,/;"	v	program:smooth_sem
+sigma_h2_inv	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw sigma_h2_inv;$/;"	m	struct:Smooth_data_
+sigma_h2_inv	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h2_inv,/;"	v	program:smooth_sem
+sigma_h3	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h, sigma_h2, sigma_h3,/;"	v	program:smooth_sem
+sigma_h3_sq	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h3_sq,/;"	v	program:smooth_sem
+sigma_v	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h, sigma_h2, sigma_h3, sigma_v,/;"	v	program:smooth_sem
+sigma_v2	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h, sigma_h2, sigma_h3, sigma_v, sigma_v2,/;"	v	program:smooth_sem
+sigma_v2_inv	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw sigma_v2_inv;$/;"	m	struct:Smooth_data_
+sigma_v2_inv	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h2_inv,sigma_v2_inv$/;"	v	program:smooth_sem
+sigma_v3	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h, sigma_h2, sigma_h3, sigma_v, sigma_v2, sigma_v3$/;"	v	program:smooth_sem
+sigma_v3_sq	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: sigma_h3_sq,sigma_v3_sq$/;"	v	program:smooth_sem
+sizeprocs	postprocess_sensitivity_kernels/postprocess_par.f90	/^  integer :: myrank,sizeprocs$/;"	v	module:postprocess_par
+sizeprocs	tomography_par.f90	/^  integer :: myrank,sizeprocs$/;"	v	module:tomography_par
+sline	postprocess_sensitivity_kernels/combine_sem.f90	/^  character(len=MAX_STRING_LEN) :: sline,/;"	v	program:combine_sem
+sline	sum_kernels.f90	/^  character(len=MAX_STRING_LEN) :: sline,/;"	v	program:sum_kernels
+sline	sum_preconditioned_kernels.f90	/^  character(len=MAX_STRING_LEN) :: sline,/;"	v	program:sum_preconditioned_kernels
+smooth_sem	postprocess_sensitivity_kernels/smooth_sem.F90	/^program smooth_sem$/;"	p
+smoothing_weights_vec	postprocess_sensitivity_kernels/smooth_sem.F90	/^  subroutine smoothing_weights_vec(/;"	s	program:smooth_sem
+step_fac	tomography_par.f90	/^  real(kind=CUSTOM_REAL) :: step_fac,/;"	v	module:tomography_par
+step_length	tomography_par.f90	/^  real(kind=CUSTOM_REAL) :: step_fac,step_length$/;"	v	module:tomography_par
+strtok	postprocess_sensitivity_kernels/parse_kernel_names.f90	/^subroutine strtok /;"	s
+sum_kernel	sum_kernels.f90	/^subroutine sum_kernel(/;"	s
+sum_kernel_pre	sum_preconditioned_kernels.f90	/^subroutine sum_kernel_pre(/;"	s
+sum_kernels	sum_kernels.f90	/^program sum_kernels$/;"	p
+sum_preconditioned_kernels	sum_preconditioned_kernels.f90	/^program sum_preconditioned_kernels$/;"	p
+t1	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real t1,/;"	v	program:smooth_sem
+t2	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real t1,t2$/;"	v	program:smooth_sem
+tk	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: tk,/;"	v	program:smooth_sem
+tomography_MODULES	rules.mk	/^tomography_MODULES = \\$/;"	m
+tomography_OBJECTS	rules.mk	/^tomography_OBJECTS = \\$/;"	m
+tomography_SHARED_OBJECTS	rules.mk	/^tomography_SHARED_OBJECTS = \\$/;"	m
+tomography_TARGETS	rules.mk	/^tomography_TARGETS = \\$/;"	m
+tomography_kernels_iso	tomography_par.f90	/^module tomography_kernels_iso$/;"	m
+tomography_kernels_tiso	tomography_par.f90	/^module tomography_kernels_tiso$/;"	m
+tomography_kernels_tiso_cg	tomography_par.f90	/^module tomography_kernels_tiso_cg$/;"	m
+tomography_model_iso	tomography_par.f90	/^module tomography_model_iso$/;"	m
+tomography_model_tiso	tomography_par.f90	/^module tomography_model_tiso$/;"	m
+tomography_par	tomography_par.f90	/^module tomography_par$/;"	m
+total_model	model_update.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: total_model$/;"	v	program:model_update
+usage	read_parameters_tomo.f90	/^  subroutine usage(/;"	s	subroutine:read_parameters_tomo
+v_criterion	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw v_criterion;$/;"	m	struct:Smooth_data_
+vpmax_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_after, vsmax_after, vpmin_after, vpmax_after$/;"	v	program:model_update
+vpmax_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_before, vsmax_before, vpmin_before, vpmax_before$/;"	v	program:model_update
+vpmax_new_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_new_after, vsmax_new_after, vpmin_new_after, vpmax_new_after$/;"	v	program:model_update
+vpmax_new_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_new_before, vsmax_new_before, vpmin_new_before, vpmax_new_before$/;"	v	program:model_update
+vpmin_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_after, vsmax_after, vpmin_after,/;"	v	program:model_update
+vpmin_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_before, vsmax_before, vpmin_before,/;"	v	program:model_update
+vpmin_new_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_new_after, vsmax_new_after, vpmin_new_after,/;"	v	program:model_update
+vpmin_new_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_new_before, vsmax_new_before, vpmin_new_before,/;"	v	program:model_update
+vsmax_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_after, vsmax_after,/;"	v	program:model_update
+vsmax_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_before, vsmax_before,/;"	v	program:model_update
+vsmax_new_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_new_after, vsmax_new_after,/;"	v	program:model_update
+vsmax_new_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_new_before, vsmax_new_before,/;"	v	program:model_update
+vsmin_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_after,/;"	v	program:model_update
+vsmin_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_before,/;"	v	program:model_update
+vsmin_new_after	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_new_after,/;"	v	program:model_update
+vsmin_new_before	model_update.f90	/^  real(kind=CUSTOM_REAL) :: vsmin_new_before,/;"	v	program:model_update
+wgll_cube	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw * wgll_cube;$/;"	m	struct:Smooth_data_
+write_gradient_iso	write_gradient.f90	/^subroutine write_gradient_iso(/;"	s
+write_gradient_tiso	write_gradient.f90	/^subroutine write_gradient_tiso(/;"	s
+write_new_model_iso	write_new_model.f90	/^subroutine write_new_model_iso(/;"	s
+write_new_model_perturbations_iso	write_new_model_perturbations.f90	/^subroutine write_new_model_perturbations_iso(/;"	s
+write_new_model_perturbations_tiso	write_new_model_perturbations.f90	/^subroutine write_new_model_perturbations_tiso(/;"	s
+write_new_model_tiso	write_new_model.f90	/^subroutine write_new_model_tiso(/;"	s
+x	postprocess_sensitivity_kernels/postprocess_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: x,/;"	v	module:postprocess_par
+x	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: x,/;"	v	module:tomography_par
+x0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x0,/;"	v	program:smooth_sem
+x_max	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x_min,x_max$/;"	v	program:smooth_sem
+x_max_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x_min_glob,x_max_glob$/;"	v	program:smooth_sem
+x_max_ref	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x_min_ref,x_max_ref$/;"	v	program:smooth_sem
+x_me	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw * x_me;$/;"	m	struct:Smooth_data_
+x_min	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x_min,/;"	v	program:smooth_sem
+x_min_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x_min_glob,/;"	v	program:smooth_sem
+x_min_ref	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x_min_ref,/;"	v	program:smooth_sem
+xadd_model_OBJECTS	rules.mk	/^xadd_model_OBJECTS = \\$/;"	m
+xadd_model_SHARED_OBJECTS	rules.mk	/^xadd_model_SHARED_OBJECTS = \\$/;"	m
+xadd_model_iso_OBJECTS	rules.mk	/^xadd_model_iso_OBJECTS = \\$/;"	m
+xclip_sem_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^xclip_sem_OBJECTS = \\$/;"	m
+xclip_sem_SHARED_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^xclip_sem_SHARED_OBJECTS = \\$/;"	m
+xcombine_sem_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^xcombine_sem_OBJECTS = \\$/;"	m
+xcombine_sem_SHARED_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^xcombine_sem_SHARED_OBJECTS = \\$/;"	m
+xl	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: xl,/;"	v	program:smooth_sem
+xmodel_update_OBJECTS	rules.mk	/^xmodel_update_OBJECTS = \\$/;"	m
+xmodel_update_SHARED_OBJECTS	rules.mk	/^xmodel_update_SHARED_OBJECTS = \\$/;"	m
+xsmooth_sem_LIBS	postprocess_sensitivity_kernels/rules.mk	/^xsmooth_sem_LIBS = $(MPILIBS) $(CUDA_LINK)$/;"	m
+xsmooth_sem_LIBS	postprocess_sensitivity_kernels/rules.mk	/^xsmooth_sem_LIBS = $(MPILIBS)$/;"	m
+xsmooth_sem_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^xsmooth_sem_OBJECTS = \\$/;"	m
+xsmooth_sem_SHARED_OBJECTS	postprocess_sensitivity_kernels/rules.mk	/^xsmooth_sem_SHARED_OBJECTS = \\$/;"	m
+xsum_kernels_OBJECTS	rules.mk	/^xsum_kernels_OBJECTS = \\$/;"	m
+xsum_kernels_SHARED_OBJECTS	rules.mk	/^xsum_kernels_SHARED_OBJECTS = \\$/;"	m
+xsum_preconditioned_kernels_OBJECTS	rules.mk	/^xsum_preconditioned_kernels_OBJECTS = \\$/;"	m
+xsum_preconditioned_kernels_SHARED_OBJECTS	rules.mk	/^xsum_preconditioned_kernels_SHARED_OBJECTS = $(xsum_kernels_SHARED_OBJECTS)$/;"	m
+xx	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: xx,/;"	v	program:smooth_sem
+y	postprocess_sensitivity_kernels/postprocess_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: x, y,/;"	v	module:postprocess_par
+y	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: x, y,/;"	v	module:tomography_par
+y0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x0, y0,/;"	v	program:smooth_sem
+y_max	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: y_min,y_max$/;"	v	program:smooth_sem
+y_max_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: y_min_glob,y_max_glob$/;"	v	program:smooth_sem
+y_max_ref	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: y_min_ref,y_max_ref$/;"	v	program:smooth_sem
+y_me	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw * y_me;$/;"	m	struct:Smooth_data_
+y_min	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: y_min,/;"	v	program:smooth_sem
+y_min_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: y_min_glob,/;"	v	program:smooth_sem
+y_min_ref	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: y_min_ref,/;"	v	program:smooth_sem
+yl	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: xl, yl,/;"	v	program:smooth_sem
+yy	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: xx, yy,/;"	v	program:smooth_sem
+z	postprocess_sensitivity_kernels/postprocess_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: x, y, z$/;"	v	module:postprocess_par
+z	tomography_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: x, y, z$/;"	v	module:tomography_par
+z0	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: x0, y0, z0,/;"	v	program:smooth_sem
+z_max	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: z_min,z_max$/;"	v	program:smooth_sem
+z_max_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: z_min_glob,z_max_glob$/;"	v	program:smooth_sem
+z_max_ref	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: z_min_ref,z_max_ref$/;"	v	program:smooth_sem
+z_me	postprocess_sensitivity_kernels/smooth_cuda.h	/^realw * z_me;$/;"	m	struct:Smooth_data_
+z_min	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: z_min,/;"	v	program:smooth_sem
+z_min_glob	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: z_min_glob,/;"	v	program:smooth_sem
+z_min_ref	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL) :: z_min_ref,/;"	v	program:smooth_sem
+zl	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: xl, yl, zl$/;"	v	program:smooth_sem
+zz	postprocess_sensitivity_kernels/smooth_sem.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable :: xx, yy, zz$/;"	v	program:smooth_sem

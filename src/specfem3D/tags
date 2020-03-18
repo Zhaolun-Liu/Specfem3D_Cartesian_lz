@@ -1,0 +1,1107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+10	convert_time.f90	/^ 10 iyr=iyr+1$/;"	l	subroutine:invtime	file:
+100	fault_solver_dynamic.f90	/^100 if (myrank == 0) write(IMAIN,*) 'Fatal error: did not find BEGIN_FAULT input block in file DATA\/Par_file_faults. Abort.'$/;"	l	subroutine:BC_DYNFLT_init	file:
+100	fault_solver_kinematic.f90	/^100 if (myrank == 0) write(IMAIN,*) 'Fatal error: did not find BEGIN_FAULT input block in file DATA\/Par_file_faults. Abort.'$/;"	l	subroutine:BC_KINFLT_init	file:
+1000	fault_solver_common.f90	/^1000 format ( ' # Date = ', i2.2, '\/', i2.2, '\/', i4.4, '; time = ',i2.2, ':', i2.2, ':', i2.2 )$/;"	l	subroutine:SCEC_write_dataT	file:
+1000	fault_solver_dynamic.f90	/^1000 format ( ' # Date = ', i2.2, '\/', i2.2, '\/', i4.4, '; time = ',i2.2, ':', i2.2, ':', i2.2 )$/;"	l	subroutine:SCEC_Write_RuptureTime	file:
+11	make_gravity.f90	/^   11 a0=0.0d0$/;"	l	subroutine:deriv	file:
+110	fault_solver_dynamic.f90	/^110 if (myrank == 0) write(IMAIN,*) 'Fatal error: did not find RUPTURE_SWITCHES input block in file DATA\/Par_file_faults. Abort.'$/;"	l	subroutine:BC_DYNFLT_init	file:
+1100	fault_solver_common.f90	/^1100 format ( ' # Column #', i1, ' = ',a )$/;"	l	subroutine:SCEC_write_dataT	file:
+20	convert_time.f90	/^ 20 imon=imon+1$/;"	l	subroutine:invtime	file:
+3	make_gravity.f90	/^ 3 continue$/;"	l	subroutine:deriv	file:
+30	convert_time.f90	/^ 30 imon=imon+1$/;"	l	subroutine:invtime	file:
+4	make_gravity.f90	/^    4 j1=1$/;"	l	subroutine:deriv	file:
+40	convert_time.f90	/^ 40 iday=iday+1$/;"	l	subroutine:invtime	file:
+5	make_gravity.f90	/^    5 j1=kdis(ndis)+1$/;"	l	subroutine:deriv	file:
+50	convert_time.f90	/^ 50 ihour=ihour+1$/;"	l	subroutine:invtime	file:
+6	make_gravity.f90	/^    6 if ((j2+1-j1) > 0) goto 11$/;"	l	subroutine:deriv	file:
+7	make_gravity.f90	/^ 7 b0=0.0d0$/;"	l	subroutine:deriv	file:
+8	make_gravity.f90	/^ 8 b1=b0$/;"	l	subroutine:deriv	file:
+ACOUSTIC_SIMULATION	specfem3D_par.F90	/^  logical :: ACOUSTIC_SIMULATION$/;"	v	module:specfem_par_acoustic
+ASP	fault_solver_dynamic.f90	/^  NAMELIST \/ ASP /;"	n	subroutine:rsf_init
+B	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:),     pointer :: B /;"	k	type:fault_type
+BC_DYNFLT_init	fault_solver_dynamic.f90	/^  subroutine BC_DYNFLT_init(/;"	s	module:fault_solver_dynamic
+BC_DYNFLT_set3d	fault_solver_dynamic.f90	/^  subroutine BC_DYNFLT_set3d(/;"	s	module:fault_solver_dynamic
+BC_KINFLT_init	fault_solver_kinematic.f90	/^subroutine BC_KINFLT_init(/;"	s	module:fault_solver_kinematic
+BC_KINFLT_set_all	fault_solver_kinematic.f90	/^subroutine BC_KINFLT_set_all(/;"	s	module:fault_solver_kinematic
+BC_KINFLT_set_single	fault_solver_kinematic.f90	/^subroutine BC_KINFLT_set_single(/;"	s	module:fault_solver_kinematic
+BEGIN_FAULT	fault_solver_dynamic.f90	/^  NAMELIST \/ BEGIN_FAULT /;"	n	subroutine:BC_DYNFLT_init
+BEGIN_FAULT	fault_solver_kinematic.f90	/^  NAMELIST \/ BEGIN_FAULT /;"	n	subroutine:BC_KINFLT_init
+BINARY_FILE	create_color_image.f90	/^  logical, parameter :: BINARY_FILE /;"	v	module:image_PNM_par
+B_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rhot_kl, rhof_kl, sm_kl, eta_kl, mufr_kl, B_kl,/;"	v	module:specfem_par_poroelastic
+Bb_kl	specfem3D_par.F90	/^    C_kl, M_kl, rhob_kl, rhofb_kl, phi_kl, Bb_kl,/;"	v	module:specfem_par_poroelastic
+COMPUTE_AND_STORE_STRAIN	specfem3D_par.F90	/^  logical :: COMPUTE_AND_STORE_STRAIN$/;"	v	module:specfem_par_elastic
+CPML_regions	pml_par.f90	/^  integer, dimension(:), allocatable :: CPML_regions$/;"	v	module:pml_par
+CPML_to_spec	pml_par.f90	/^  integer, dimension(:), allocatable :: CPML_to_spec$/;"	v	module:pml_par
+CPML_type	pml_par.f90	/^  integer, dimension(:), allocatable :: CPML_type$/;"	v	module:pml_par
+CPML_width_x	pml_par.f90	/^  real(CUSTOM_REAL) :: CPML_width_x,/;"	v	module:pml_par
+CPML_width_y	pml_par.f90	/^  real(CUSTOM_REAL) :: CPML_width_x,CPML_width_y,/;"	v	module:pml_par
+CPML_width_z	pml_par.f90	/^  real(CUSTOM_REAL) :: CPML_width_x,CPML_width_y,CPML_width_z$/;"	v	module:pml_par
+C_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rhot_kl, rhof_kl, sm_kl, eta_kl, mufr_kl, B_kl, &$/;"	v	module:specfem_par_poroelastic
+Cb_kl	specfem3D_par.F90	/^    C_kl, M_kl, rhob_kl, rhofb_kl, phi_kl, Bb_kl, Cb_kl,/;"	v	module:specfem_par_poroelastic
+DIR	Makefile	/^DIR = specfem3D$/;"	m
+DIST2D	fault_solver_dynamic.f90	/^  NAMELIST \/ DIST2D /;"	n	subroutine:init_2d_distribution
+Dc	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:), pointer :: Dc /;"	k	type:swf_type
+ELASTIC_SIMULATION	specfem3D_par.F90	/^  logical :: ELASTIC_SIMULATION$/;"	v	module:specfem_par_elastic
+Fault_pointer	specfem3D_par.F90	/^  integer(kind=8) :: Fault_pointer$/;"	v	module:specfem_par
+GRAVITY_SIMULATION	gravity_perturbation.f90	/^  logical, save :: GRAVITY_SIMULATION /;"	v	module:gravity_perturbation
+G_xx	specfem3D_par.F90	/^                                                g_x,g_y,g_z,G_xx,/;"	v	module:specfem_par
+G_xy	specfem3D_par.F90	/^                                                g_x,g_y,g_z,G_xx,G_yy,G_zz,G_xy,/;"	v	module:specfem_par
+G_xz	specfem3D_par.F90	/^                                                g_x,g_y,g_z,G_xx,G_yy,G_zz,G_xy,G_xz,/;"	v	module:specfem_par
+G_yy	specfem3D_par.F90	/^                                                g_x,g_y,g_z,G_xx,G_yy,/;"	v	module:specfem_par
+G_yz	specfem3D_par.F90	/^                                                g_x,g_y,g_z,G_xx,G_yy,G_zz,G_xy,G_xz,G_yz,/;"	v	module:specfem_par
+G_zz	specfem3D_par.F90	/^                                                g_x,g_y,g_z,G_xx,G_yy,G_zz,/;"	v	module:specfem_par
+IMAGE_TYPE	create_color_image.f90	/^  integer,parameter:: IMAGE_TYPE /;"	v	module:image_PNM_par
+INFO_CUDA	rules.mk	/^INFO_CUDA="building xspecfem3D with CUDA 4 support"$/;"	m
+INFO_CUDA	rules.mk	/^INFO_CUDA="building xspecfem3D with CUDA support"$/;"	m
+INIT_STRESS	fault_solver_dynamic.f90	/^  NAMELIST \/ INIT_STRESS /;"	n	subroutine:init_one_fault
+KINPAR	fault_solver_kinematic.f90	/^  NAMELIST \/ KINPAR /;"	n	subroutine:init_one_fault
+K_store_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: K_store_x,/;"	v	module:pml_par
+K_store_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: K_store_x, K_store_y,/;"	v	module:pml_par
+K_store_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: K_store_x, K_store_y, K_store_z$/;"	v	module:pml_par
+Kelvin_Voigt_eta	fault_solver_dynamic.f90	/^  real(kind=CUSTOM_REAL), allocatable, save :: Kelvin_Voigt_eta(/;"	v	module:fault_solver_dynamic
+MESHER	initialize_simulation.F90	/^  NAMELIST\/MESHER\//;"	n	subroutine:initialize_simulation_check
+MOVIE_SIMULATION	specfem3D_par.F90	/^  logical :: MOVIE_SIMULATION$/;"	v	module:specfem_par_movie
+MU	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:),   pointer :: MU /;"	v	module:fault_solver_common
+M_kl	specfem3D_par.F90	/^    C_kl, M_kl,/;"	v	module:specfem_par_poroelastic
+MakeTPV10XBoundaryRateStrengtheningLayer	fault_solver_dynamic.f90	/^    subroutine MakeTPV10XBoundaryRateStrengtheningLayer(/;"	s	subroutine:rsf_init
+Mb_kl	specfem3D_par.F90	/^    C_kl, M_kl, rhob_kl, rhofb_kl, phi_kl, Bb_kl, Cb_kl, Mb_kl,/;"	v	module:specfem_par_poroelastic
+Mesh_pointer	specfem3D_par.F90	/^  integer(kind=8) :: Mesh_pointer$/;"	v	module:specfem_par
+Mxx	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: Mxx,/;"	v	module:specfem_par
+Mxx_der	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: Mxx_der,/;"	v	module:specfem_par
+Mxy	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: Mxx,Myy,Mzz,Mxy,/;"	v	module:specfem_par
+Mxy_der	specfem3D_par.F90	/^    Mzz_der,Mxy_der,/;"	v	module:specfem_par
+Mxz	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: Mxx,Myy,Mzz,Mxy,Mxz,/;"	v	module:specfem_par
+Mxz_der	specfem3D_par.F90	/^    Mzz_der,Mxy_der,Mxz_der,/;"	v	module:specfem_par
+Myy	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: Mxx,Myy,/;"	v	module:specfem_par
+Myy_der	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: Mxx_der,Myy_der,/;"	v	module:specfem_par
+Myz	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: Mxx,Myy,Mzz,Mxy,Mxz,Myz$/;"	v	module:specfem_par
+Myz_der	specfem3D_par.F90	/^    Mzz_der,Mxy_der,Mxz_der,Myz_der$/;"	v	module:specfem_par
+Mzz	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: Mxx,Myy,Mzz,/;"	v	module:specfem_par
+Mzz_der	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: Mxx_der,Myy_der, &$/;"	v	module:specfem_par
+NGLOB_AB	specfem3D_par.F90	/^  integer :: NSPEC_AB, NGLOB_AB$/;"	v	module:specfem_par
+NGLOB_AB_LDDRK	specfem3D_par.F90	/^  integer :: NGLOB_AB_LDDRK,/;"	v	module:specfem_par
+NGLOB_ADJOINT	specfem3D_par.F90	/^  integer :: NSPEC_ADJOINT, NGLOB_ADJOINT$/;"	v	module:specfem_par
+NPROC	assemble_MPI_vector.f90	/^  integer :: NPROC$/;"	v
+NSNAP	fault_solver_dynamic.f90	/^  integer, save                :: NTOUT,NSNAP$/;"	v	module:fault_solver_dynamic
+NSNAP	fault_solver_kinematic.f90	/^  integer, save :: NTOUT,NSNAP$/;"	v	module:fault_solver_kinematic
+NSPEC2D_BOTTOM	specfem3D_par.F90	/^  integer :: nspec2D_xmin,nspec2D_xmax,nspec2D_ymin,nspec2D_ymax,NSPEC2D_BOTTOM,/;"	v	module:specfem_par
+NSPEC2D_MOHO	specfem3D_par.F90	/^  integer :: NSPEC_BOUN,NSPEC2D_MOHO$/;"	v	module:specfem_par
+NSPEC2D_TOP	specfem3D_par.F90	/^  integer :: nspec2D_xmin,nspec2D_xmax,nspec2D_ymin,nspec2D_ymax,NSPEC2D_BOTTOM,NSPEC2D_TOP$/;"	v	module:specfem_par
+NSPEC_AB	specfem3D_par.F90	/^  integer :: NSPEC_AB,/;"	v	module:specfem_par
+NSPEC_ADJOINT	specfem3D_par.F90	/^  integer :: NSPEC_ADJOINT,/;"	v	module:specfem_par
+NSPEC_ANISO	specfem3D_par.F90	/^  integer :: NSPEC_ANISO$/;"	v	module:specfem_par_elastic
+NSPEC_ATTENUATION_AB	specfem3D_par.F90	/^  integer :: NSPEC_ATTENUATION_AB$/;"	v	module:specfem_par
+NSPEC_ATTENUATION_AB_LDDRK	specfem3D_par.F90	/^  integer :: NGLOB_AB_LDDRK,NSPEC_ATTENUATION_AB_LDDRK$/;"	v	module:specfem_par
+NSPEC_BOUN	specfem3D_par.F90	/^  integer :: NSPEC_BOUN,/;"	v	module:specfem_par
+NSPEC_CPML	pml_par.f90	/^  integer :: NSPEC_CPML$/;"	v	module:pml_par
+NSPEC_STRAIN_ONLY	specfem3D_par.F90	/^  integer :: NSPEC_STRAIN_ONLY$/;"	v	module:specfem_par_elastic
+NSTAGE_TIME_SCHEME	specfem3D_par.F90	/^  integer :: NSTAGE_TIME_SCHEME,/;"	v	module:specfem_par
+NTOUT	fault_solver_dynamic.f90	/^  integer, save                :: NTOUT,/;"	v	module:fault_solver_dynamic
+NTOUT	fault_solver_kinematic.f90	/^  integer, save :: NTOUT,/;"	v	module:fault_solver_kinematic
+NX_IMAGE_color	create_color_image.f90	/^  integer :: NX_IMAGE_color,/;"	v	module:image_PNM_par
+NX_TOPO	specfem3D_par.F90	/^  integer :: NX_TOPO,/;"	v	module:specfem_par
+NY_TOPO	specfem3D_par.F90	/^  integer :: NX_TOPO,NY_TOPO$/;"	v	module:specfem_par
+NZ_IMAGE_color	create_color_image.f90	/^  integer :: NX_IMAGE_color,NZ_IMAGE_color$/;"	v	module:image_PNM_par
+Nfaults	fault_solver_dynamic.f90	/^  integer, save                :: Nfaults$/;"	v	module:fault_solver_dynamic
+PARALLEL_FAULT	fault_solver_common.f90	/^  logical, parameter :: PARALLEL_FAULT /;"	v	module:fault_solver_common
+PML_displ_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: PML_displ_new$/;"	v	module:pml_par
+PML_displ_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: PML_displ_old$/;"	v	module:pml_par
+PML_dpotential_dxl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl,/;"	v	module:specfem_par
+PML_dpotential_dxl_new	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl_new,/;"	v	module:specfem_par
+PML_dpotential_dxl_old	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl_old,/;"	v	module:specfem_par
+PML_dpotential_dyl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl,PML_dpotential_dyl,/;"	v	module:specfem_par
+PML_dpotential_dyl_new	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl_new,PML_dpotential_dyl_new,/;"	v	module:specfem_par
+PML_dpotential_dyl_old	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl_old,PML_dpotential_dyl_old,/;"	v	module:specfem_par
+PML_dpotential_dzl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl,PML_dpotential_dyl,PML_dpotential_dzl$/;"	v	module:specfem_par
+PML_dpotential_dzl_new	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl_new,PML_dpotential_dyl_new,PML_dpotential_dzl_new$/;"	v	module:specfem_par
+PML_dpotential_dzl_old	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: PML_dpotential_dxl_old,PML_dpotential_dyl_old,PML_dpotential_dzl_old$/;"	v	module:specfem_par
+PML_dux_dxl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl,/;"	v	module:pml_par
+PML_dux_dxl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl_new,/;"	v	module:pml_par
+PML_dux_dxl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl_old,/;"	v	module:pml_par
+PML_dux_dyl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl,PML_dux_dyl,/;"	v	module:pml_par
+PML_dux_dyl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl_new,PML_dux_dyl_new,/;"	v	module:pml_par
+PML_dux_dyl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl_old,PML_dux_dyl_old,/;"	v	module:pml_par
+PML_dux_dzl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl,PML_dux_dyl,PML_dux_dzl$/;"	v	module:pml_par
+PML_dux_dzl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl_new,PML_dux_dyl_new,PML_dux_dzl_new$/;"	v	module:pml_par
+PML_dux_dzl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_dux_dxl_old,PML_dux_dyl_old,PML_dux_dzl_old$/;"	v	module:pml_par
+PML_duy_dxl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl,/;"	v	module:pml_par
+PML_duy_dxl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl_new,/;"	v	module:pml_par
+PML_duy_dxl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl_old,/;"	v	module:pml_par
+PML_duy_dyl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl,PML_duy_dyl,/;"	v	module:pml_par
+PML_duy_dyl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl_new,PML_duy_dyl_new,/;"	v	module:pml_par
+PML_duy_dyl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl_old,PML_duy_dyl_old,/;"	v	module:pml_par
+PML_duy_dzl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl,PML_duy_dyl,PML_duy_dzl$/;"	v	module:pml_par
+PML_duy_dzl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl_new,PML_duy_dyl_new,PML_duy_dzl_new$/;"	v	module:pml_par
+PML_duy_dzl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duy_dxl_old,PML_duy_dyl_old,PML_duy_dzl_old$/;"	v	module:pml_par
+PML_duz_dxl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl,/;"	v	module:pml_par
+PML_duz_dxl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl_new,/;"	v	module:pml_par
+PML_duz_dxl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl_old,/;"	v	module:pml_par
+PML_duz_dyl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl,PML_duz_dyl,/;"	v	module:pml_par
+PML_duz_dyl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl_new,PML_duz_dyl_new,/;"	v	module:pml_par
+PML_duz_dyl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl_old,PML_duz_dyl_old,/;"	v	module:pml_par
+PML_duz_dzl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl,PML_duz_dyl,PML_duz_dzl$/;"	v	module:pml_par
+PML_duz_dzl_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl_new,PML_duz_dyl_new,PML_duz_dzl_new$/;"	v	module:pml_par
+PML_duz_dzl_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: PML_duz_dxl_old,PML_duz_dyl_old,PML_duz_dzl_old$/;"	v	module:pml_par
+PML_potential_acoustic_new	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: PML_potential_acoustic_new$/;"	v	module:pml_par
+PML_potential_acoustic_old	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: PML_potential_acoustic_old$/;"	v	module:pml_par
+POROELASTIC_SIMULATION	specfem3D_par.F90	/^  logical :: POROELASTIC_SIMULATION$/;"	v	module:specfem_par_poroelastic
+POWER_DISPLAY_COLOR	create_color_image.f90	/^  real(kind=CUSTOM_REAL), parameter :: POWER_DISPLAY_COLOR /;"	v	module:image_PNM_par
+R	fault_solver_common.f90	/^    real(kind=CUSTOM_RE/;"	k	type:fault_type
+RATE_AND_STATE	fault_solver_dynamic.f90	/^  logical, save :: RATE_AND_STATE /;"	v	module:fault_solver_dynamic
+RSF	fault_solver_dynamic.f90	/^  NAMELIST \/ RSF /;"	n	subroutine:rsf_init
+RSF_HETE	fault_solver_dynamic.f90	/^  logical, save :: RSF_HETE /;"	v	module:fault_solver_dynamic
+RSF_HETE_init	fault_solver_dynamic.f90	/^    subroutine RSF_HETE_init(/;"	s	subroutine:rsf_init
+RUPTURE_SWITCHES	fault_solver_dynamic.f90	/^  NAMELIST \/ RUPTURE_SWITCHES /;"	n	subroutine:BC_DYNFLT_init
+R_trace	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: R_trace,/;"	v	module:specfem_par_elastic
+R_trace_lddrk	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_elastic
+R_xx	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: R_trace,R_xx,/;"	v	module:specfem_par_elastic
+R_xx_lddrk	specfem3D_par.F90	/^    R_trace_lddrk,R_xx_lddrk,/;"	v	module:specfem_par_elastic
+R_xy	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: R_trace,R_xx,R_yy,R_xy,/;"	v	module:specfem_par_elastic
+R_xy_lddrk	specfem3D_par.F90	/^    R_trace_lddrk,R_xx_lddrk,R_yy_lddrk,R_xy_lddrk,/;"	v	module:specfem_par_elastic
+R_xz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: R_trace,R_xx,R_yy,R_xy,R_xz,/;"	v	module:specfem_par_elastic
+R_xz_lddrk	specfem3D_par.F90	/^    R_trace_lddrk,R_xx_lddrk,R_yy_lddrk,R_xy_lddrk,R_xz_lddrk,/;"	v	module:specfem_par_elastic
+R_yy	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: R_trace,R_xx,R_yy,/;"	v	module:specfem_par_elastic
+R_yy_lddrk	specfem3D_par.F90	/^    R_trace_lddrk,R_xx_lddrk,R_yy_lddrk,/;"	v	module:specfem_par_elastic
+R_yz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: R_trace,R_xx,R_yy,R_xy,R_xz,R_yz$/;"	v	module:specfem_par_elastic
+R_yz_lddrk	specfem3D_par.F90	/^    R_trace_lddrk,R_xx_lddrk,R_yy_lddrk,R_xy_lddrk,R_xz_lddrk,R_yz_lddrk$/;"	v	module:specfem_par_elastic
+S	rules.mk	/^$(specfem3D_OBJECTS): S = ${S_TOP}\/src\/specfem3D$/;"	m
+S	rules.mk	/^S := ${S_TOP}\/src\/specfem3D$/;"	m
+SCEC_Write_RuptureTime	fault_solver_dynamic.f90	/^  subroutine SCEC_Write_RuptureTime(/;"	s	module:fault_solver_dynamic
+SCEC_write_dataT	fault_solver_common.f90	/^subroutine SCEC_write_dataT(/;"	s	module:fault_solver_common
+SIMULATION_TYPE_DYN	fault_solver_dynamic.f90	/^  logical, save :: SIMULATION_TYPE_DYN /;"	v	module:fault_solver_dynamic
+SIMULATION_TYPE_KIN	fault_solver_kinematic.f90	/^  logical, save :: SIMULATION_TYPE_KIN /;"	v	module:fault_solver_kinematic
+STRESS_TENSOR	fault_solver_dynamic.f90	/^  NAMELIST \/STRESS_TENSOR /;"	n	subroutine:init_one_fault
+SWF	fault_solver_dynamic.f90	/^  NAMELIST \/ SWF /;"	n	subroutine:swf_init
+StateLaw	fault_solver_common.f90	/^    integer :: StateLaw /;"	k	type:rsf_type
+T	fault_solver_common.f90	/^    real(kind=CUSTO/;"	k	type:fault_type
+T0	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:,:), pointer :: T0 /;"	v	module:fault_solver_common
+TPV10X	fault_solver_dynamic.f90	/^  logical, save :: TPV10X /;"	v	module:fault_solver_dynamic
+TPV16	fault_solver_dynamic.f90	/^  logical, save :: TPV16 /;"	v	module:fault_solver_dynamic
+TPV16_init	fault_solver_dynamic.f90	/^    subroutine TPV16_init$/;"	s	subroutine:init_one_fault
+USE_PIERO_DISTRIBUTION	noise_tomography.f90	/^  logical,parameter :: USE_PIERO_DISTRIBUTION /;"	v	module:user_noise_distribution
+V0	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:), pointer :: V0 /;"	k	type:rsf_type
+VP_BACKGROUND	create_color_image.f90	/^  logical, parameter :: VP_BACKGROUND /;"	v	module:image_PNM_par
+V_HEALING	fault_solver_dynamic.f90	/^  real(kind=CUSTOM_REAL), save :: V_HEALING$/;"	v	module:fault_solver_dynamic
+V_RUPT	fault_solver_dynamic.f90	/^  real(kind=CUSTOM_REAL), save :: V_RUPT$/;"	v	module:fault_solver_dynamic
+abs_boundary_ijk	specfem3D_par.F90	/^  integer, dimension(:,:,:), allocatable :: abs_boundary_ijk$/;"	v	module:specfem_par
+abs_boundary_ispec	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: abs_boundary_ispec$/;"	v	module:specfem_par
+abs_boundary_jacobian2Dw	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: abs_boundary_jacobian2Dw$/;"	v	module:specfem_par
+abs_boundary_normal	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: abs_boundary_normal$/;"	v	module:specfem_par
+accE	gravity_perturbation.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accE,/;"	v	module:gravity_perturbation
+accN	gravity_perturbation.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accE,accN,/;"	v	module:gravity_perturbation
+accZ	gravity_perturbation.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accE,accN,accZ$/;"	v	module:gravity_perturbation
+accel	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: displ,veloc,accel$/;"	v	module:specfem_par_elastic
+accel_adj_coupling	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accel_adj_coupling$/;"	v	module:specfem_par_elastic
+accel_elastic_CPML	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: accel_elastic_CPML$/;"	v	module:pml_par
+accels_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accels_poroelastic,/;"	v	module:specfem_par_poroelastic
+accelw_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accelw_poroelastic,/;"	v	module:specfem_par_poroelastic
+acoustic_enforce_free_surface	compute_forces_acoustic_calling_routine.f90	/^subroutine acoustic_enforce_free_surface(/;"	s
+acoustic_enforce_free_surface_lddrk	compute_forces_acoustic_calling_routine.f90	/^subroutine acoustic_enforce_free_surface_lddrk(/;"	s
+add_BT	fault_solver_common.f90	/^subroutine add_BT(/;"	s	module:fault_solver_common
+add_my_contrib	assemble_MPI_vector.f90	/^    subroutine add_my_contrib(/;"	s	subroutine:assemble_MPI_vector_async_w_ord
+add_source_master_rec_noise	noise_tomography.f90	/^  subroutine add_source_master_rec_noise(/;"	s
+adios_specfem3D_OBJECTS	rules.mk	/^adios_specfem3D_OBJECTS = $(adios_specfem3D_STUBS)$/;"	m
+adios_specfem3D_OBJECTS	rules.mk	/^adios_specfem3D_OBJECTS= \\$/;"	m
+adios_specfem3D_PREOBJECTS	rules.mk	/^adios_specfem3D_PREOBJECTS = $(adios_specfem3D_PRESTUBS)$/;"	m
+adios_specfem3D_PREOBJECTS	rules.mk	/^adios_specfem3D_PREOBJECTS = \\$/;"	m
+adios_specfem3D_PRESTUBS	rules.mk	/^adios_specfem3D_PRESTUBS = \\$/;"	m
+adios_specfem3D_STUBS	rules.mk	/^adios_specfem3D_STUBS = \\$/;"	m
+adj_source_file	specfem3D_par.F90	/^  character(len=MAX_STRING_LEN) :: adj_source_file$/;"	v	module:specfem_par
+allow_opening	fault_solver_common.f90	/^    logical                 :: allow_opening /;"	v	module:fault_solver_common
+alpha_ac_kl	specfem3D_par.F90	/^    rhop_ac_kl, alpha_ac_kl$/;"	v	module:specfem_par_acoustic
+alpha_store_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: alpha_store_x,/;"	v	module:pml_par
+alpha_store_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: alpha_store_x,alpha_store_y,/;"	v	module:pml_par
+alpha_store_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: alpha_store_x,alpha_store_y,alpha_store_z$/;"	v	module:pml_par
+alphaval	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(N_SLS) :: &$/;"	v	module:specfem_par_elastic
+asinh_slatec	fault_solver_dynamic.f90	/^  double precision function asinh_slatec(/;"	f	module:fault_solver_dynamic
+assemble_MPI_scalar_send_cuda	assemble_MPI_vector.f90	/^  subroutine assemble_MPI_scalar_send_cuda(/;"	s
+assemble_MPI_scalar_write_cuda	assemble_MPI_vector.f90	/^  subroutine assemble_MPI_scalar_write_cuda(/;"	s
+assemble_MPI_vector_async_send	assemble_MPI_vector.f90	/^  subroutine assemble_MPI_vector_async_send(/;"	s
+assemble_MPI_vector_async_w_ord	assemble_MPI_vector.f90	/^  subroutine assemble_MPI_vector_async_w_ord(/;"	s
+assemble_MPI_vector_blocking	assemble_MPI_vector.f90	/^  subroutine assemble_MPI_vector_blocking(/;"	s
+assemble_MPI_vector_poro_s	assemble_MPI_vector.f90	/^  subroutine assemble_MPI_vector_poro_s(/;"	s
+assemble_MPI_vector_poro_w	assemble_MPI_vector.f90	/^  subroutine assemble_MPI_vector_poro_w(/;"	s
+assemble_MPI_vector_write_cuda	assemble_MPI_vector.f90	/^  subroutine assemble_MPI_vector_write_cuda(/;"	s
+b_PML_field	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_PML_field,/;"	v	module:pml_par
+b_PML_potential	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_PML_field,b_PML_potential$/;"	v	module:pml_par
+b_R_trace	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_elastic
+b_R_trace_lddrk	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_elastic
+b_R_xx	specfem3D_par.F90	/^    b_R_trace,b_R_xx,/;"	v	module:specfem_par_elastic
+b_R_xx_lddrk	specfem3D_par.F90	/^    b_R_trace_lddrk,b_R_xx_lddrk,/;"	v	module:specfem_par_elastic
+b_R_xy	specfem3D_par.F90	/^    b_R_trace,b_R_xx,b_R_yy,b_R_xy,/;"	v	module:specfem_par_elastic
+b_R_xy_lddrk	specfem3D_par.F90	/^    b_R_trace_lddrk,b_R_xx_lddrk,b_R_yy_lddrk,b_R_xy_lddrk,/;"	v	module:specfem_par_elastic
+b_R_xz	specfem3D_par.F90	/^    b_R_trace,b_R_xx,b_R_yy,b_R_xy,b_R_xz,/;"	v	module:specfem_par_elastic
+b_R_xz_lddrk	specfem3D_par.F90	/^    b_R_trace_lddrk,b_R_xx_lddrk,b_R_yy_lddrk,b_R_xy_lddrk,b_R_xz_lddrk,/;"	v	module:specfem_par_elastic
+b_R_yy	specfem3D_par.F90	/^    b_R_trace,b_R_xx,b_R_yy,/;"	v	module:specfem_par_elastic
+b_R_yy_lddrk	specfem3D_par.F90	/^    b_R_trace_lddrk,b_R_xx_lddrk,b_R_yy_lddrk,/;"	v	module:specfem_par_elastic
+b_R_yz	specfem3D_par.F90	/^    b_R_trace,b_R_xx,b_R_yy,b_R_xy,b_R_xz,b_R_yz$/;"	v	module:specfem_par_elastic
+b_R_yz_lddrk	specfem3D_par.F90	/^    b_R_trace_lddrk,b_R_xx_lddrk,b_R_yy_lddrk,b_R_xy_lddrk,b_R_xz_lddrk,b_R_yz_lddrk$/;"	v	module:specfem_par_elastic
+b_absorb_field	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_absorb_field$/;"	v	module:specfem_par_elastic
+b_absorb_fields	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_absorb_fields,/;"	v	module:specfem_par_poroelastic
+b_absorb_fieldw	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_absorb_fields,b_absorb_fieldw$/;"	v	module:specfem_par_poroelastic
+b_absorb_potential	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_absorb_potential$/;"	v	module:specfem_par_acoustic
+b_accel	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_displ, b_veloc, b_accel$/;"	v	module:specfem_par_elastic
+b_accels_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_accels_poroelastic,/;"	v	module:specfem_par_poroelastic
+b_accelw_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_accelw_poroelastic,/;"	v	module:specfem_par_poroelastic
+b_alphaval	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(N_SLS) :: &$/;"	v	module:specfem_par_elastic
+b_betaval	specfem3D_par.F90	/^    b_alphaval, b_betaval,/;"	v	module:specfem_par_elastic
+b_buffer_recv_scalar_ext_mesh	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_buffer_recv_scalar_ext_mesh$/;"	v	module:specfem_par_acoustic
+b_buffer_recv_vector_ext_mesh	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_buffer_recv_vector_ext_mesh$/;"	v	module:specfem_par_elastic
+b_buffer_recv_vector_ext_meshs	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_buffer_recv_vector_ext_meshs$/;"	v	module:specfem_par_poroelastic
+b_buffer_recv_vector_ext_meshw	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_buffer_recv_vector_ext_meshw$/;"	v	module:specfem_par_poroelastic
+b_buffer_send_scalar_ext_mesh	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_buffer_send_scalar_ext_mesh$/;"	v	module:specfem_par_acoustic
+b_buffer_send_vector_ext_mesh	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_buffer_send_vector_ext_mesh$/;"	v	module:specfem_par_elastic
+b_buffer_send_vector_ext_meshs	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_buffer_send_vector_ext_meshs$/;"	v	module:specfem_par_poroelastic
+b_buffer_send_vector_ext_meshw	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: b_buffer_send_vector_ext_meshw$/;"	v	module:specfem_par_poroelastic
+b_deltat	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) b_deltat,/;"	v	module:specfem_par
+b_deltatover2	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) b_deltat, b_deltatover2,/;"	v	module:specfem_par
+b_deltatsqover2	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) b_deltat, b_deltatover2, b_deltatsqover2$/;"	v	module:specfem_par
+b_displ	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_displ,/;"	v	module:specfem_par_elastic
+b_displ_lddrk	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_displ_lddrk,/;"	v	module:specfem_par_elastic
+b_displs_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_accels_poroelastic,b_velocs_poroelastic,b_displs_poroelastic$/;"	v	module:specfem_par_poroelastic
+b_displw_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_accelw_poroelastic,b_velocw_poroelastic,b_displw_poroelastic$/;"	v	module:specfem_par_poroelastic
+b_dsdx_bot	specfem3D_par.F90	/^    dsdx_top, dsdx_bot, b_dsdx_top, b_dsdx_bot$/;"	v	module:specfem_par_elastic
+b_dsdx_top	specfem3D_par.F90	/^    dsdx_top, dsdx_bot, b_dsdx_top,/;"	v	module:specfem_par_elastic
+b_epsilon_trace_over_3	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: b_epsilon_trace_over_3$/;"	v	module:specfem_par_elastic
+b_epsilondev_trace	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_elastic
+b_epsilondev_xx	specfem3D_par.F90	/^    b_epsilondev_trace,b_epsilondev_xx,/;"	v	module:specfem_par_elastic
+b_epsilondev_xy	specfem3D_par.F90	/^    b_epsilondev_trace,b_epsilondev_xx,b_epsilondev_yy,b_epsilondev_xy,/;"	v	module:specfem_par_elastic
+b_epsilondev_xz	specfem3D_par.F90	/^    b_epsilondev_trace,b_epsilondev_xx,b_epsilondev_yy,b_epsilondev_xy,b_epsilondev_xz,/;"	v	module:specfem_par_elastic
+b_epsilondev_yy	specfem3D_par.F90	/^    b_epsilondev_trace,b_epsilondev_xx,b_epsilondev_yy,/;"	v	module:specfem_par_elastic
+b_epsilondev_yz	specfem3D_par.F90	/^    b_epsilondev_trace,b_epsilondev_xx,b_epsilondev_yy,b_epsilondev_xy,b_epsilondev_xz,b_epsilondev_yz$/;"	v	module:specfem_par_elastic
+b_epsilons_trace_over_3	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_poroelastic
+b_epsilonsdev_xx	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_poroelastic
+b_epsilonsdev_xy	specfem3D_par.F90	/^    b_epsilonsdev_xx,b_epsilonsdev_yy,b_epsilonsdev_xy,/;"	v	module:specfem_par_poroelastic
+b_epsilonsdev_xz	specfem3D_par.F90	/^    b_epsilonsdev_xx,b_epsilonsdev_yy,b_epsilonsdev_xy,b_epsilonsdev_xz,/;"	v	module:specfem_par_poroelastic
+b_epsilonsdev_yy	specfem3D_par.F90	/^    b_epsilonsdev_xx,b_epsilonsdev_yy,/;"	v	module:specfem_par_poroelastic
+b_epsilonsdev_yz	specfem3D_par.F90	/^    b_epsilonsdev_xx,b_epsilonsdev_yy,b_epsilonsdev_xy,b_epsilonsdev_xz,b_epsilonsdev_yz,/;"	v	module:specfem_par_poroelastic
+b_epsilonw_trace_over_3	specfem3D_par.F90	/^    b_epsilons_trace_over_3,b_epsilonw_trace_over_3$/;"	v	module:specfem_par_poroelastic
+b_epsilonwdev_xx	specfem3D_par.F90	/^    b_epsilonsdev_xx,b_epsilonsdev_yy,b_epsilonsdev_xy,b_epsilonsdev_xz,b_epsilonsdev_yz, &$/;"	v	module:specfem_par_poroelastic
+b_epsilonwdev_xy	specfem3D_par.F90	/^    b_epsilonwdev_xx,b_epsilonwdev_yy,b_epsilonwdev_xy,/;"	v	module:specfem_par_poroelastic
+b_epsilonwdev_xz	specfem3D_par.F90	/^    b_epsilonwdev_xx,b_epsilonwdev_yy,b_epsilonwdev_xy,b_epsilonwdev_xz,/;"	v	module:specfem_par_poroelastic
+b_epsilonwdev_yy	specfem3D_par.F90	/^    b_epsilonwdev_xx,b_epsilonwdev_yy,/;"	v	module:specfem_par_poroelastic
+b_epsilonwdev_yz	specfem3D_par.F90	/^    b_epsilonwdev_xx,b_epsilonwdev_yy,b_epsilonwdev_xy,b_epsilonwdev_xz,b_epsilonwdev_yz$/;"	v	module:specfem_par_poroelastic
+b_gammaval	specfem3D_par.F90	/^    b_alphaval, b_betaval, b_gammaval$/;"	v	module:specfem_par_elastic
+b_num_abs_boundary_faces	specfem3D_par.F90	/^  integer :: b_num_abs_boundary_faces$/;"	v	module:specfem_par
+b_potential_acoustic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: b_potential_acoustic,/;"	v	module:specfem_par_acoustic
+b_potential_dot_acoustic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: b_potential_acoustic, &$/;"	v	module:specfem_par_acoustic
+b_potential_dot_dot_acoustic	specfem3D_par.F90	/^                        b_potential_dot_acoustic,b_potential_dot_dot_acoustic$/;"	v	module:specfem_par_acoustic
+b_reclen_PML_field	pml_par.f90	/^  integer :: b_reclen_PML_field,/;"	v	module:pml_par
+b_reclen_PML_potential	pml_par.f90	/^  integer :: b_reclen_PML_field,b_reclen_PML_potential$/;"	v	module:pml_par
+b_reclen_field	specfem3D_par.F90	/^  integer :: b_reclen_field$/;"	v	module:specfem_par_elastic
+b_reclen_field_poro	specfem3D_par.F90	/^  integer :: b_reclen_field_poro$/;"	v	module:specfem_par_poroelastic
+b_reclen_potential	specfem3D_par.F90	/^  integer :: b_reclen_potential$/;"	v	module:specfem_par_acoustic
+b_request_recv_scalar_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: b_request_recv_scalar_ext_mesh$/;"	v	module:specfem_par_acoustic
+b_request_recv_vector_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: b_request_recv_vector_ext_mesh$/;"	v	module:specfem_par_elastic
+b_request_recv_vector_ext_meshs	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: b_request_recv_vector_ext_meshs$/;"	v	module:specfem_par_poroelastic
+b_request_recv_vector_ext_meshw	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: b_request_recv_vector_ext_meshw$/;"	v	module:specfem_par_poroelastic
+b_request_send_scalar_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: b_request_send_scalar_ext_mesh$/;"	v	module:specfem_par_acoustic
+b_request_send_vector_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: b_request_send_vector_ext_mesh$/;"	v	module:specfem_par_elastic
+b_request_send_vector_ext_meshs	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: b_request_send_vector_ext_meshs$/;"	v	module:specfem_par_poroelastic
+b_request_send_vector_ext_meshw	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: b_request_send_vector_ext_meshw$/;"	v	module:specfem_par_poroelastic
+b_veloc	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_displ, b_veloc,/;"	v	module:specfem_par_elastic
+b_veloc_lddrk	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_displ_lddrk, b_veloc_lddrk$/;"	v	module:specfem_par_elastic
+b_velocs_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_accels_poroelastic,b_velocs_poroelastic,/;"	v	module:specfem_par_poroelastic
+b_velocw_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: b_accelw_poroelastic,b_velocw_poroelastic,/;"	v	module:specfem_par_poroelastic
+band_instrument_code	write_seismograms.f90	/^  subroutine band_instrument_code(/;"	s
+bc_dynflt_set3d_all	fault_solver_dynamic.f90	/^  subroutine bc_dynflt_set3d_all(/;"	s	module:fault_solver_dynamic
+betaval	specfem3D_par.F90	/^    alphaval,betaval,/;"	v	module:specfem_par_elastic
+buffer_recv_scalar_ext_mesh	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: buffer_recv_scalar_ext_mesh$/;"	v	module:specfem_par
+buffer_recv_vector_ext_mesh	assemble_MPI_vector.f90	/^       buffer_send_vector_ext_mesh,buffer_recv_vector_ext_mesh$/;"	v
+buffer_recv_vector_ext_mesh	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: buffer_recv_vector_ext_mesh$/;"	v	module:specfem_par
+buffer_recv_vector_ext_mesh_s	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: buffer_recv_vector_ext_mesh_s$/;"	v	module:specfem_par
+buffer_recv_vector_ext_mesh_w	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: buffer_recv_vector_ext_mesh_w$/;"	v	module:specfem_par
+buffer_send_scalar_ext_mesh	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: buffer_send_scalar_ext_mesh$/;"	v	module:specfem_par
+buffer_send_vector_ext_mesh	assemble_MPI_vector.f90	/^  real(kind=CUSTOM_REAL), dimension(NDIM,max_nibool_interfaces_ext_mesh,num_interfaces_ext_mesh) :: &$/;"	v
+buffer_send_vector_ext_mesh	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: buffer_send_vector_ext_mesh$/;"	v	module:specfem_par
+buffer_send_vector_ext_mesh_s	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: buffer_send_vector_ext_mesh_s$/;"	v	module:specfem_par
+buffer_send_vector_ext_mesh_w	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: buffer_send_vector_ext_mesh_w$/;"	v	module:specfem_par
+c11store	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_elastic
+c12store	specfem3D_par.F90	/^            c11store,c12store,/;"	v	module:specfem_par_elastic
+c13store	specfem3D_par.F90	/^            c11store,c12store,c13store,/;"	v	module:specfem_par_elastic
+c14store	specfem3D_par.F90	/^            c11store,c12store,c13store,c14store,/;"	v	module:specfem_par_elastic
+c15store	specfem3D_par.F90	/^            c11store,c12store,c13store,c14store,c15store,/;"	v	module:specfem_par_elastic
+c16store	specfem3D_par.F90	/^            c11store,c12store,c13store,c14store,c15store,c16store,/;"	v	module:specfem_par_elastic
+c22store	specfem3D_par.F90	/^            c11store,c12store,c13store,c14store,c15store,c16store, &$/;"	v	module:specfem_par_elastic
+c23store	specfem3D_par.F90	/^            c22store,c23store,/;"	v	module:specfem_par_elastic
+c24store	specfem3D_par.F90	/^            c22store,c23store,c24store,/;"	v	module:specfem_par_elastic
+c25store	specfem3D_par.F90	/^            c22store,c23store,c24store,c25store,/;"	v	module:specfem_par_elastic
+c26store	specfem3D_par.F90	/^            c22store,c23store,c24store,c25store,c26store,/;"	v	module:specfem_par_elastic
+c33store	specfem3D_par.F90	/^            c22store,c23store,c24store,c25store,c26store,c33store,/;"	v	module:specfem_par_elastic
+c34store	specfem3D_par.F90	/^            c22store,c23store,c24store,c25store,c26store,c33store, &$/;"	v	module:specfem_par_elastic
+c35store	specfem3D_par.F90	/^            c34store,c35store,/;"	v	module:specfem_par_elastic
+c36store	specfem3D_par.F90	/^            c34store,c35store,c36store,/;"	v	module:specfem_par_elastic
+c44store	specfem3D_par.F90	/^            c34store,c35store,c36store,c44store,/;"	v	module:specfem_par_elastic
+c45store	specfem3D_par.F90	/^            c34store,c35store,c36store,c44store,c45store,/;"	v	module:specfem_par_elastic
+c46store	specfem3D_par.F90	/^            c34store,c35store,c36store,c44store,c45store,c46store,/;"	v	module:specfem_par_elastic
+c55store	specfem3D_par.F90	/^            c34store,c35store,c36store,c44store,c45store,c46store, &$/;"	v	module:specfem_par_elastic
+c56store	specfem3D_par.F90	/^            c55store,c56store,/;"	v	module:specfem_par_elastic
+c66store	specfem3D_par.F90	/^            c55store,c56store,c66store$/;"	v	module:specfem_par_elastic
+calndr	calendar.f90	/^  subroutine calndr(/;"	s
+check_parameters_noise	noise_tomography.f90	/^  subroutine check_parameters_noise(/;"	s
+check_stability	check_stability.f90	/^  subroutine check_stability(/;"	s
+chi_elem	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: chi_elem$/;"	v	module:specfem_par
+cijkl_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: cijkl_kl$/;"	v	module:specfem_par_elastic
+comp_dir_vect_source_E	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: comp_dir_vect_source_E$/;"	v	module:specfem_par
+comp_dir_vect_source_N	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: comp_dir_vect_source_N$/;"	v	module:specfem_par
+comp_dir_vect_source_Z_UP	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: comp_dir_vect_source_Z_UP$/;"	v	module:specfem_par
+comp_source_time_function	comp_source_time_function.f90	/^  double precision function comp_source_time_function(/;"	f
+comp_source_time_function	specfem3D_par.F90	/^  double precision, external :: comp_source_time_function$/;"	v	module:specfem_par
+comp_source_time_function_d2gau	comp_source_time_function.f90	/^  double precision function comp_source_time_function_d2gau(/;"	f
+comp_source_time_function_d2rck	comp_source_time_function.f90	/^  double precision function comp_source_time_function_d2rck(/;"	f
+comp_source_time_function_dgau	comp_source_time_function.f90	/^  double precision function comp_source_time_function_dgau(/;"	f
+comp_source_time_function_drck	comp_source_time_function.f90	/^  double precision function comp_source_time_function_drck(/;"	f
+comp_source_time_function_gauss	comp_source_time_function.f90	/^  double precision function comp_source_time_function_gauss(/;"	f
+comp_source_time_function_rickr	comp_source_time_function.f90	/^  double precision function comp_source_time_function_rickr(/;"	f
+compute_R	fault_solver_common.f90	/^subroutine compute_R(/;"	s	module:fault_solver_common
+compute_add_sources_acoustic	compute_add_sources_acoustic.f90	/^  subroutine compute_add_sources_acoustic(/;"	s
+compute_add_sources_acoustic_GPU	compute_add_sources_acoustic.f90	/^  subroutine compute_add_sources_acoustic_GPU(/;"	s
+compute_add_sources_acoustic_backward	compute_add_sources_acoustic.f90	/^  subroutine compute_add_sources_acoustic_backward(/;"	s
+compute_add_sources_poroelastic	compute_add_sources_poroelastic.f90	/^  subroutine compute_add_sources_poroelastic(/;"	s
+compute_add_sources_viscoelastic	compute_add_sources_viscoelastic.F90	/^  subroutine compute_add_sources_viscoelastic(/;"	s
+compute_add_sources_viscoelastic_GPU	compute_add_sources_viscoelastic.F90	/^  subroutine compute_add_sources_viscoelastic_GPU(/;"	s
+compute_add_sources_viscoelastic_backward	compute_add_sources_viscoelastic.F90	/^  subroutine compute_add_sources_viscoelastic_backward(/;"	s
+compute_adj_source_frechet	compute_adj_source_frechet.f90	/^  subroutine compute_adj_source_frechet(/;"	s
+compute_arrays_adjoint_source	compute_arrays_source.f90	/^  subroutine compute_arrays_adjoint_source(/;"	s
+compute_arrays_adjoint_source_SU	compute_arrays_source.f90	/^subroutine compute_arrays_adjoint_source_SU(/;"	s
+compute_arrays_source	compute_arrays_source.f90	/^  subroutine compute_arrays_source(/;"	s
+compute_arrays_source_acoustic	compute_arrays_source.f90	/^  subroutine compute_arrays_source_acoustic(/;"	s
+compute_arrays_source_noise	noise_tomography.f90	/^  subroutine compute_arrays_source_noise(/;"	s
+compute_boundary_kernel	compute_boundary_kernel.f90	/^  subroutine compute_boundary_kernel(/;"	s
+compute_boundary_kernel_elem	compute_boundary_kernel.f90	/^subroutine compute_boundary_kernel_elem(/;"	s
+compute_continuity_disp_po_el	compute_forces_poroelastic_calling_routine.f90	/^subroutine compute_continuity_disp_po_el(/;"	s
+compute_convolution_coef	pml_compute_accel_contribution.f90	/^subroutine compute_convolution_coef(/;"	s
+compute_coupling_acoustic_el	compute_coupling_acoustic_el.f90	/^  subroutine compute_coupling_acoustic_el(/;"	s
+compute_coupling_acoustic_po	compute_coupling_acoustic_po.f90	/^  subroutine compute_coupling_acoustic_po(/;"	s
+compute_coupling_ocean	compute_coupling_viscoelastic_ac.f90	/^  subroutine compute_coupling_ocean(/;"	s
+compute_coupling_ocean_backward	compute_coupling_viscoelastic_ac.f90	/^  subroutine compute_coupling_ocean_backward(/;"	s
+compute_coupling_poroelastic_ac	compute_coupling_poroelastic_ac.f90	/^  subroutine compute_coupling_poroelastic_ac(/;"	s
+compute_coupling_poroelastic_el	compute_coupling_poroelastic_el.f90	/^  subroutine compute_coupling_poroelastic_el(/;"	s
+compute_coupling_viscoelastic_ac	compute_coupling_viscoelastic_ac.f90	/^  subroutine compute_coupling_viscoelastic_ac(/;"	s
+compute_coupling_viscoelastic_po	compute_coupling_viscoelastic_po.f90	/^  subroutine compute_coupling_viscoelastic_po(/;"	s
+compute_element_att_memory_lddrk	compute_element_att_memory.f90	/^subroutine compute_element_att_memory_lddrk(/;"	s
+compute_element_att_memory_second_order_rk	compute_element_att_memory.f90	/^subroutine compute_element_att_memory_second_order_rk(/;"	s
+compute_energy	compute_energy.f90	/^  subroutine compute_energy(/;"	s
+compute_forces_acoustic_GPU_calling	compute_forces_acoustic_calling_routine.f90	/^subroutine compute_forces_acoustic_GPU_calling(/;"	s
+compute_forces_acoustic_NGLL5_fast	compute_forces_acoustic_NGLL5_fast.f90	/^  subroutine compute_forces_acoustic_NGLL5_fast(/;"	s
+compute_forces_acoustic_NGLLnot5_generic_slow	compute_forces_acoustic_NGLLnot5_generic_slow.f90	/^  subroutine compute_forces_acoustic_NGLLnot5_generic_slow(/;"	s
+compute_forces_acoustic_backward_calling	compute_forces_acoustic_calling_routine.f90	/^subroutine compute_forces_acoustic_backward_calling(/;"	s
+compute_forces_acoustic_calling	compute_forces_acoustic_calling_routine.f90	/^subroutine compute_forces_acoustic_calling(/;"	s
+compute_forces_poro_fluid_part	compute_forces_poro_fluid_part.f90	/^  subroutine compute_forces_poro_fluid_part(/;"	s
+compute_forces_poro_solid_part	compute_forces_poro_solid_part.f90	/^  subroutine compute_forces_poro_solid_part(/;"	s
+compute_forces_poroelastic_calling	compute_forces_poroelastic_calling_routine.f90	/^subroutine compute_forces_poroelastic_calling(/;"	s
+compute_forces_viscoelastic	compute_forces_viscoelastic.f90	/^subroutine compute_forces_viscoelastic(/;"	s
+compute_forces_viscoelastic_GPU_calling	compute_forces_viscoelastic_calling_routine.F90	/^subroutine compute_forces_viscoelastic_GPU_calling(/;"	s
+compute_forces_viscoelastic_backward_calling	compute_forces_viscoelastic_calling_routine.F90	/^subroutine compute_forces_viscoelastic_backward_calling(/;"	s
+compute_forces_viscoelastic_calling	compute_forces_viscoelastic_calling_routine.F90	/^subroutine compute_forces_viscoelastic_calling(/;"	s
+compute_gradient_in_acoustic	compute_gradient_in_acoustic.f90	/^  subroutine compute_gradient_in_acoustic(/;"	s
+compute_gravity_integrals	prepare_timerun.F90	/^  subroutine compute_gravity_integrals(/;"	s
+compute_interpolated_dva_acoust	compute_interpolated_dva.f90	/^subroutine compute_interpolated_dva_acoust(/;"	s
+compute_interpolated_dva_viscoelast	compute_interpolated_dva.f90	/^subroutine compute_interpolated_dva_viscoelast(/;"	s
+compute_kernels	compute_kernels.f90	/^  subroutine compute_kernels(/;"	s
+compute_kernels_Hessian	compute_kernels.f90	/^  subroutine compute_kernels_Hessian(/;"	s
+compute_kernels_ac	compute_kernels.f90	/^  subroutine compute_kernels_ac(/;"	s
+compute_kernels_el	compute_kernels.f90	/^  subroutine compute_kernels_el(/;"	s
+compute_kernels_po	compute_kernels.f90	/^  subroutine compute_kernels_po(/;"	s
+compute_kernels_strength_noise	noise_tomography.f90	/^  subroutine compute_kernels_strength_noise(/;"	s
+compute_stacey_acoustic	compute_stacey_acoustic.f90	/^  subroutine compute_stacey_acoustic(/;"	s
+compute_stacey_acoustic_GPU	compute_stacey_acoustic.f90	/^  subroutine compute_stacey_acoustic_GPU(/;"	s
+compute_stacey_acoustic_backward	compute_stacey_acoustic.f90	/^  subroutine compute_stacey_acoustic_backward(/;"	s
+compute_stacey_poroelastic	compute_stacey_poroelastic.f90	/^  subroutine compute_stacey_poroelastic(/;"	s
+compute_stacey_viscoelastic	compute_stacey_viscoelastic.F90	/^  subroutine compute_stacey_viscoelastic(/;"	s
+compute_stacey_viscoelastic_GPU	compute_stacey_viscoelastic.F90	/^  subroutine compute_stacey_viscoelastic_GPU(/;"	s
+compute_stacey_viscoelastic_backward	compute_stacey_viscoelastic.F90	/^  subroutine compute_stacey_viscoelastic_backward(/;"	s
+compute_strain_in_element	compute_forces_viscoelastic.f90	/^subroutine compute_strain_in_element(/;"	s
+compute_strain_product	compute_kernels.f90	/^  subroutine compute_strain_product(/;"	s
+convtime	convert_time.f90	/^  subroutine convtime(/;"	s
+coupling_ac_el_ijk	specfem3D_par.F90	/^  integer, dimension(:,:,:), allocatable :: coupling_ac_el_ijk$/;"	v	module:specfem_par_acoustic
+coupling_ac_el_ispec	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: coupling_ac_el_ispec$/;"	v	module:specfem_par_acoustic
+coupling_ac_el_jacobian2Dw	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: coupling_ac_el_jacobian2Dw$/;"	v	module:specfem_par_acoustic
+coupling_ac_el_normal	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: coupling_ac_el_normal$/;"	v	module:specfem_par_acoustic
+coupling_ac_po_ijk	specfem3D_par.F90	/^  integer, dimension(:,:,:), allocatable :: coupling_ac_po_ijk$/;"	v	module:specfem_par_acoustic
+coupling_ac_po_ispec	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: coupling_ac_po_ispec$/;"	v	module:specfem_par_acoustic
+coupling_ac_po_jacobian2Dw	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: coupling_ac_po_jacobian2Dw$/;"	v	module:specfem_par_acoustic
+coupling_ac_po_normal	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: coupling_ac_po_normal$/;"	v	module:specfem_par_acoustic
+coupling_el_po_ijk	specfem3D_par.F90	/^  integer, dimension(:,:,:), allocatable :: coupling_el_po_ijk,/;"	v	module:specfem_par_poroelastic
+coupling_el_po_ispec	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: coupling_el_po_ispec,/;"	v	module:specfem_par_poroelastic
+coupling_el_po_jacobian2Dw	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: coupling_el_po_jacobian2Dw$/;"	v	module:specfem_par_poroelastic
+coupling_el_po_normal	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: coupling_el_po_normal$/;"	v	module:specfem_par_poroelastic
+coupling_po_el_ijk	specfem3D_par.F90	/^  integer, dimension(:,:,:), allocatable :: coupling_el_po_ijk,coupling_po_el_ijk$/;"	v	module:specfem_par_poroelastic
+coupling_po_el_ispec	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: coupling_el_po_ispec,coupling_po_el_ispec$/;"	v	module:specfem_par_poroelastic
+cpII_kl	specfem3D_par.F90	/^    rhobb_kl, rhofbb_kl, phib_kl, cpI_kl, cpII_kl,/;"	v	module:specfem_par_poroelastic
+cpI_kl	specfem3D_par.F90	/^    rhobb_kl, rhofbb_kl, phib_kl, cpI_kl,/;"	v	module:specfem_par_poroelastic
+cs_kl	specfem3D_par.F90	/^    rhobb_kl, rhofbb_kl, phib_kl, cpI_kl, cpII_kl, cs_kl,/;"	v	module:specfem_par_poroelastic
+csevl	fault_solver_dynamic.f90	/^    double precision function csevl(/;"	f	function:asinh_slatec
+cuda_specfem3D_DEVICE_OBJ	rules.mk	/^cuda_specfem3D_DEVICE_OBJ = \\$/;"	m
+cuda_specfem3D_OBJECTS	rules.mk	/^cuda_specfem3D_OBJECTS = \\$/;"	m
+cuda_specfem3D_STUBS	rules.mk	/^cuda_specfem3D_STUBS = \\$/;"	m
+curl_x	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable:: div, curl_x,/;"	v	module:specfem_par_movie
+curl_y	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable:: div, curl_x, curl_y,/;"	v	module:specfem_par_movie
+curl_z	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable:: div, curl_x, curl_y, curl_z$/;"	v	module:specfem_par_movie
+d_store_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: d_store_x,/;"	v	module:pml_par
+d_store_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: d_store_x, d_store_y,/;"	v	module:pml_par
+d_store_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: d_store_x, d_store_y, d_store_z$/;"	v	module:pml_par
+dat	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:,:,:), pointer :: dat /;"	k	type:dataT_type
+dataT	fault_solver_common.f90	/^    type(dataT_/;"	v	module:fault_solver_common
+dataT_type	fault_solver_common.f90	/^  type dataT_type$/;"	t	module:fault_solver_common
+dataXZ	fault_solver_common.f90	/^    type(dataXZ_/;"	v	module:fault_solver_common
+dataXZ_all	fault_solver_common.f90	/^    type(dataXZ_type)       :: dataXZ,dataXZ_all$/;"	v	module:fault_solver_common
+dataXZ_type	fault_solver_common.f90	/^  type dataXZ_type$/;"	t	module:fault_solver_common
+data_pixel_recv	create_color_image.f90	/^  real(kind=CUSTOM_REAL),dimension(:),allocatable :: data_pixel_recv$/;"	v	module:image_PNM_par
+data_pixel_send	create_color_image.f90	/^  real(kind=CUSTOM_REAL),dimension(:),allocatable :: data_pixel_send$/;"	v	module:image_PNM_par
+define_kernel_adios_variables	save_kernels_adios.F90	/^subroutine define_kernel_adios_variables(/;"	s
+define_kernel_adios_variables	specfem3D_adios_stubs.f90	/^subroutine define_kernel_adios_variables(/;"	s
+deltat	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) deltat,/;"	v	module:specfem_par
+deltatover2	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) deltat,deltatover2,/;"	v	module:specfem_par
+deltatsqover2	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) deltat,deltatover2,deltatsqover2$/;"	v	module:specfem_par
+deriv	make_gravity.f90	/^  subroutine deriv(/;"	s
+detect_mesh_surfaces	detect_mesh_surfaces.f90	/^  subroutine detect_mesh_surfaces(/;"	s
+displ	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: displ,/;"	v	module:specfem_par_elastic
+displ_lddrk	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: displ_lddrk,/;"	v	module:specfem_par_elastic
+displs_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accels_poroelastic,velocs_poroelastic,displs_poroelastic$/;"	v	module:specfem_par_poroelastic
+displw_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accelw_poroelastic,velocw_poroelastic,displw_poroelastic$/;"	v	module:specfem_par_poroelastic
+div	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable:: div,/;"	v	module:specfem_par_movie
+dsdx_bot	specfem3D_par.F90	/^    dsdx_top, dsdx_bot,/;"	v	module:specfem_par_elastic
+dsdx_top	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:,:),allocatable :: &$/;"	v	module:specfem_par_elastic
+dsmname	specfem3D_par.F90	/^  character(len=MAX_STRING_LEN) :: prname,dsmname$/;"	v	module:specfem_par
+dt	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL) :: dt$/;"	k	type:dataT_type
+dt	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL) :: dt$/;"	k	type:fault_type
+dummystring	specfem3D_par.F90	/^  character(len=MAX_STRING_LEN) :: rec_filename,filtered_rec_filename,dummystring$/;"	v	module:specfem_par
+epsilon_trace_over_3	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: epsilon_trace_over_3$/;"	v	module:specfem_par_elastic
+epsilondev_trace	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_elastic
+epsilondev_xx	specfem3D_par.F90	/^    epsilondev_trace,epsilondev_xx,/;"	v	module:specfem_par_elastic
+epsilondev_xy	specfem3D_par.F90	/^    epsilondev_trace,epsilondev_xx,epsilondev_yy,epsilondev_xy,/;"	v	module:specfem_par_elastic
+epsilondev_xz	specfem3D_par.F90	/^    epsilondev_trace,epsilondev_xx,epsilondev_yy,epsilondev_xy,epsilondev_xz,/;"	v	module:specfem_par_elastic
+epsilondev_yy	specfem3D_par.F90	/^    epsilondev_trace,epsilondev_xx,epsilondev_yy,/;"	v	module:specfem_par_elastic
+epsilondev_yz	specfem3D_par.F90	/^    epsilondev_trace,epsilondev_xx,epsilondev_yy,epsilondev_xy,epsilondev_xz,epsilondev_yz$/;"	v	module:specfem_par_elastic
+epsilons_trace_over_3	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_poroelastic
+epsilonsdev_xx	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: &$/;"	v	module:specfem_par_poroelastic
+epsilonsdev_xy	specfem3D_par.F90	/^    epsilonsdev_xx,epsilonsdev_yy,epsilonsdev_xy,/;"	v	module:specfem_par_poroelastic
+epsilonsdev_xz	specfem3D_par.F90	/^    epsilonsdev_xx,epsilonsdev_yy,epsilonsdev_xy,epsilonsdev_xz,/;"	v	module:specfem_par_poroelastic
+epsilonsdev_yy	specfem3D_par.F90	/^    epsilonsdev_xx,epsilonsdev_yy,/;"	v	module:specfem_par_poroelastic
+epsilonsdev_yz	specfem3D_par.F90	/^    epsilonsdev_xx,epsilonsdev_yy,epsilonsdev_xy,epsilonsdev_xz,epsilonsdev_yz,/;"	v	module:specfem_par_poroelastic
+epsilonw_trace_over_3	specfem3D_par.F90	/^    epsilons_trace_over_3,epsilonw_trace_over_3$/;"	v	module:specfem_par_poroelastic
+epsilonwdev_xx	specfem3D_par.F90	/^    epsilonsdev_xx,epsilonsdev_yy,epsilonsdev_xy,epsilonsdev_xz,epsilonsdev_yz, &$/;"	v	module:specfem_par_poroelastic
+epsilonwdev_xy	specfem3D_par.F90	/^    epsilonwdev_xx,epsilonwdev_yy,epsilonwdev_xy,/;"	v	module:specfem_par_poroelastic
+epsilonwdev_xz	specfem3D_par.F90	/^    epsilonwdev_xx,epsilonwdev_yy,epsilonwdev_xy,epsilonwdev_xz,/;"	v	module:specfem_par_poroelastic
+epsilonwdev_yy	specfem3D_par.F90	/^    epsilonwdev_xx,epsilonwdev_yy,/;"	v	module:specfem_par_poroelastic
+epsilonwdev_yz	specfem3D_par.F90	/^    epsilonwdev_xx,epsilonwdev_yy,epsilonwdev_xy,epsilonwdev_xz,epsilonwdev_yz$/;"	v	module:specfem_par_poroelastic
+eta_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rhot_kl, rhof_kl, sm_kl, eta_kl,/;"	v	module:specfem_par_poroelastic
+eta_receiver	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: xi_receiver,eta_receiver,/;"	v	module:specfem_par
+eta_source	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: xi_source,eta_source,/;"	v	module:specfem_par
+etastore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: etastore,/;"	v	module:specfem_par_poroelastic
+etax	specfem3D_par.F90	/^        xix,xiy,xiz,etax,/;"	v	module:specfem_par
+etaxl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,xiyl,xizl,etaxl,/;"	v	module:specfem_par_movie
+etay	specfem3D_par.F90	/^        xix,xiy,xiz,etax,etay,/;"	v	module:specfem_par
+etayl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,xiyl,xizl,etaxl,etayl,/;"	v	module:specfem_par_movie
+etaz	specfem3D_par.F90	/^        xix,xiy,xiz,etax,etay,etaz,/;"	v	module:specfem_par
+etazl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,xiyl,xizl,etaxl,etayl,etazl,/;"	v	module:specfem_par_movie
+f_integrand_KH	specfem3D_par.F90	/^  double precision, dimension(:,:), allocatable :: f_integrand_KH$/;"	v	module:specfem_par
+faces_surface_ibool	specfem3D_par.F90	/^  integer,dimension(:,:),allocatable :: faces_surface_ibool$/;"	v	module:specfem_par_movie
+faces_surface_ispec	specfem3D_par.F90	/^  integer,dimension(:),allocatable :: faces_surface_ispec$/;"	v	module:specfem_par_movie
+faces_surface_offset	specfem3D_par.F90	/^  integer,dimension(:),allocatable :: faces_surface_offset$/;"	v	module:specfem_par_movie
+factor_common	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: factor_common,/;"	v	module:specfem_par_elastic
+factor_common_kappa	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: factor_common,factor_common_kappa$/;"	v	module:specfem_par_elastic
+factor_force_source	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: factor_force_source$/;"	v	module:specfem_par
+fault_solver_common	fault_solver_common.f90	/^module fault_solver_common$/;"	m
+fault_solver_dynamic	fault_solver_dynamic.f90	/^module fault_solver_dynamic$/;"	m
+fault_solver_kinematic	fault_solver_kinematic.f90	/^module fault_solver_kinematic$/;"	m
+fault_type	fault_solver_common.f90	/^  type fault_type$/;"	t	module:fault_solver_common
+faults	fault_solver_dynamic.f90	/^  type(bc_dynandkinflt_type), allocatable, save :: faults(/;"	v	module:fault_solver_dynamic
+faults	fault_solver_kinematic.f90	/^  type(bc_dynandkinflt_type), allocatable, save :: faults(/;"	v	module:fault_solver_kinematic
+filtered_rec_filename	specfem3D_par.F90	/^  character(len=MAX_STRING_LEN) :: rec_filename,filtered_rec_filename,/;"	v	module:specfem_par
+finalize_simulation	finalize_simulation.f90	/^  subroutine finalize_simulation(/;"	s
+free_surface_ijk	specfem3D_par.F90	/^  integer, dimension(:,:,:), allocatable :: free_surface_ijk$/;"	v	module:specfem_par
+free_surface_ispec	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: free_surface_ispec$/;"	v	module:specfem_par
+free_surface_jacobian2Dw	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: free_surface_jacobian2Dw$/;"	v	module:specfem_par
+free_surface_normal	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: free_surface_normal$/;"	v	module:specfem_par
+funcd	fault_solver_dynamic.f90	/^  subroutine funcd(/;"	s	module:fault_solver_dynamic
+g_x	specfem3D_par.F90	/^  double precision, dimension(NTOTAL_OBSERVATION) :: x_observation,y_observation,z_observation, &$/;"	v	module:specfem_par
+g_y	specfem3D_par.F90	/^                                                g_x,g_y,/;"	v	module:specfem_par
+g_z	specfem3D_par.F90	/^                                                g_x,g_y,g_z,/;"	v	module:specfem_par
+gamma_receiver	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: xi_receiver,eta_receiver,gamma_receiver$/;"	v	module:specfem_par
+gamma_source	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: xi_source,eta_source,gamma_source$/;"	v	module:specfem_par
+gammaval	specfem3D_par.F90	/^    alphaval,betaval,gammaval$/;"	v	module:specfem_par_elastic
+gammax	specfem3D_par.F90	/^        xix,xiy,xiz,etax,etay,etaz,gammax,/;"	v	module:specfem_par
+gammaxl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,xiyl,xizl,etaxl,etayl,etazl,gammaxl,/;"	v	module:specfem_par_movie
+gammay	specfem3D_par.F90	/^        xix,xiy,xiz,etax,etay,etaz,gammax,gammay,/;"	v	module:specfem_par
+gammayl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,xiyl,xizl,etaxl,etayl,etazl,gammaxl,gammayl,/;"	v	module:specfem_par_movie
+gammaz	specfem3D_par.F90	/^        xix,xiy,xiz,etax,etay,etaz,gammax,gammay,gammaz,/;"	v	module:specfem_par
+gammazl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,xiyl,xizl,etaxl,etayl,etazl,gammaxl,gammayl,gammazl$/;"	v	module:specfem_par_movie
+gather_dataXZ	fault_solver_dynamic.f90	/^  subroutine gather_dataXZ(/;"	s	module:fault_solver_dynamic
+get_cmt	get_cmt.f90	/^  subroutine get_cmt(/;"	s
+get_cmt_moment_magnitude	get_cmt.f90	/^  double precision function get_cmt_moment_magnitude(/;"	f
+get_cmt_scalar_moment	get_cmt.f90	/^  double precision function get_cmt_scalar_moment(/;"	f
+get_force	get_force.f90	/^  subroutine get_force(/;"	s
+get_iglob_veloc	create_color_image.f90	/^  subroutine get_iglob_veloc(/;"	s
+get_iglob_vp	create_color_image.f90	/^  subroutine get_iglob_vp(/;"	s
+get_jump	fault_solver_common.f90	/^function get_jump /;"	f	module:fault_solver_common
+get_stf_acoustic	compute_add_sources_acoustic.f90	/^  double precision function get_stf_acoustic(/;"	f
+get_stf_poroelastic	compute_add_sources_poroelastic.f90	/^  double precision function get_stf_poroelastic(/;"	f
+get_stf_viscoelastic	compute_add_sources_viscoelastic.F90	/^  double precision function get_stf_viscoelastic(/;"	f
+get_weighted_jump	fault_solver_common.f90	/^function get_weighted_jump /;"	f	module:fault_solver_common
+gravity_init	gravity_perturbation.f90	/^subroutine gravity_init(/;"	s	module:gravity_perturbation
+gravity_output	gravity_perturbation.f90	/^subroutine gravity_output(/;"	s	module:gravity_perturbation
+gravity_perturbation	gravity_perturbation.f90	/^module gravity_perturbation$/;"	m
+gravity_timeseries	gravity_perturbation.f90	/^subroutine gravity_timeseries(/;"	s	module:gravity_perturbation
+hdur	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: tshift_src,hdur,/;"	v	module:specfem_par
+hdur_Gaussian	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: tshift_src,hdur,hdur_Gaussian$/;"	v	module:specfem_par
+healing	fault_solver_common.f90	/^    logical :: healing /;"	k	type:swf_type
+heaviside	fault_solver_dynamic.f90	/^  elemental function heaviside(/;"	f	module:fault_solver_dynamic
+hess_ac_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: hess_ac_kl$/;"	v	module:specfem_par_acoustic
+hess_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: hess_kl$/;"	v	module:specfem_par_elastic
+hetar	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: hxir,hetar,/;"	v	module:specfem_par
+hetar_store	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: hxir_store,hetar_store,/;"	v	module:specfem_par
+hgammar	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: hxir,hetar,hpxir,hpetar,hgammar,/;"	v	module:specfem_par
+hgammar_store	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: hxir_store,hetar_store,hgammar_store$/;"	v	module:specfem_par
+hp1	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) hp1,/;"	v	module:specfem_par_movie
+hp2	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) hp1,hp2,/;"	v	module:specfem_par_movie
+hp3	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) hp1,hp2,hp3$/;"	v	module:specfem_par_movie
+hpetar	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: hxir,hetar,hpxir,hpetar,/;"	v	module:specfem_par
+hpetar_store	specfem3D_par.F90	/^  double precision, dimension(:,:), allocatable :: hpxir_store,hpetar_store,/;"	v	module:specfem_par
+hpgammar	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: hxir,hetar,hpxir,hpetar,hgammar,hpgammar$/;"	v	module:specfem_par
+hpgammar_store	specfem3D_par.F90	/^  double precision, dimension(:,:), allocatable :: hpxir_store,hpetar_store,hpgammar_store$/;"	v	module:specfem_par
+hprime_xx	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLX) :: hprime_xx,/;"	v	module:specfem_par
+hprime_xxT	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLX) :: hprime_xx,hprime_xxT,/;"	v	module:specfem_par
+hprime_yy	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLY,NGLLY) :: hprime_yy,/;"	v	module:specfem_par
+hprime_zz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLZ,NGLLZ) :: hprime_zz,/;"	v	module:specfem_par
+hprimewgll_xx	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLX) :: hprime_xx,hprime_xxT,hprimewgll_xx,/;"	v	module:specfem_par
+hprimewgll_xxT	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLX) :: hprime_xx,hprime_xxT,hprimewgll_xx,hprimewgll_xxT$/;"	v	module:specfem_par
+hprimewgll_yy	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLY,NGLLY) :: hprime_yy,hprimewgll_yy$/;"	v	module:specfem_par
+hprimewgll_zz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLZ,NGLLZ) :: hprime_zz,hprimewgll_zz$/;"	v	module:specfem_par
+hpxir	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: hxir,hetar,hpxir,/;"	v	module:specfem_par
+hpxir_store	specfem3D_par.F90	/^  double precision, dimension(:,:), allocatable :: hpxir_store,/;"	v	module:specfem_par
+hxir	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: hxir,/;"	v	module:specfem_par
+hxir_store	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: hxir_store,/;"	v	module:specfem_par
+ibelm_bottom	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: ibelm_xmin,ibelm_xmax,ibelm_ymin,ibelm_ymax,ibelm_bottom,/;"	v	module:specfem_par
+ibelm_moho_bot	specfem3D_par.F90	/^  integer,dimension(:),allocatable :: ibelm_moho_top, ibelm_moho_bot$/;"	v	module:specfem_par
+ibelm_moho_top	specfem3D_par.F90	/^  integer,dimension(:),allocatable :: ibelm_moho_top,/;"	v	module:specfem_par
+ibelm_top	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: ibelm_xmin,ibelm_xmax,ibelm_ymin,ibelm_ymax,ibelm_bottom,ibelm_top$/;"	v	module:specfem_par
+ibelm_xmax	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: ibelm_xmin,ibelm_xmax,/;"	v	module:specfem_par
+ibelm_xmin	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: ibelm_xmin,/;"	v	module:specfem_par
+ibelm_ymax	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: ibelm_xmin,ibelm_xmax,ibelm_ymin,ibelm_ymax,/;"	v	module:specfem_par
+ibelm_ymin	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: ibelm_xmin,ibelm_xmax,ibelm_ymin,/;"	v	module:specfem_par
+ibool	specfem3D_par.F90	/^  integer, dimension(:,:,:,:), allocatable :: ibool$/;"	v	module:specfem_par
+ibool_interfaces_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:,:), allocatable :: ibool_interfaces_ext_mesh$/;"	v	module:specfem_par
+ibulk1	fault_solver_common.f90	/^    integer, dimension(:), pointer :: ibulk1 /;"	k	type:fault_type
+idaywk	calendar.f90	/^  integer function idaywk(/;"	f
+iglob	fault_solver_common.f90	/^    integer, dimension(:), pointer :: iglob /;"	k	type:dataT_type
+iglob_image_color	create_color_image.f90	/^  integer,dimension(:,:),allocatable :: iglob_image_color$/;"	v	module:image_PNM_par
+iglob_is_surface_external_mesh	specfem3D_par.F90	/^  logical, dimension(:), allocatable :: iglob_is_surface_external_mesh$/;"	v	module:specfem_par
+iinterface	assemble_MPI_vector.f90	/^  integer :: iinterface$/;"	v
+ijk_moho_bot	specfem3D_par.F90	/^  integer,dimension(:,:,:),allocatable :: ijk_moho_top, ijk_moho_bot$/;"	v	module:specfem_par
+ijk_moho_top	specfem3D_par.F90	/^  integer,dimension(:,:,:),allocatable :: ijk_moho_top,/;"	v	module:specfem_par
+image_PNM_par	create_color_image.f90	/^  module image_PNM_par$/;"	m
+image_color_data	create_color_image.f90	/^  real(kind=CUSTOM_REAL),dimension(:,:),allocatable:: image_color_data$/;"	v	module:image_PNM_par
+image_color_vp_display	create_color_image.f90	/^  real(kind=CUSTOM_REAL),dimension(:,:),allocatable:: image_color_vp_display$/;"	v	module:image_PNM_par
+image_cutsnaps	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter :: image_cutsnaps /;"	v	module:image_PNM_par
+init_2d_distribution	fault_solver_dynamic.f90	/^  subroutine init_2d_distribution(/;"	s	module:fault_solver_dynamic
+init_dataT	fault_solver_common.f90	/^subroutine init_dataT(/;"	s	module:fault_solver_common
+init_dataXZ	fault_solver_dynamic.f90	/^  subroutine init_dataXZ(/;"	s	module:fault_solver_dynamic
+init_dataXZ	fault_solver_kinematic.f90	/^subroutine init_dataXZ(/;"	s	module:fault_solver_kinematic
+init_fault_traction	fault_solver_dynamic.f90	/^  subroutine init_fault_traction(/;"	s	module:fault_solver_dynamic
+init_one_fault	fault_solver_dynamic.f90	/^  subroutine init_one_fault(/;"	s	module:fault_solver_dynamic
+init_one_fault	fault_solver_kinematic.f90	/^subroutine init_one_fault(/;"	s	module:fault_solver_kinematic
+initialize_GPU	initialize_simulation.F90	/^  subroutine initialize_GPU(/;"	s
+initialize_fault	fault_solver_common.f90	/^subroutine initialize_fault /;"	s	module:fault_solver_common
+initialize_simulation	initialize_simulation.F90	/^  subroutine initialize_simulation(/;"	s
+initialize_simulation_adjoint	initialize_simulation.F90	/^  subroutine initialize_simulation_adjoint(/;"	s
+initialize_simulation_check	initialize_simulation.F90	/^  subroutine initialize_simulation_check(/;"	s
+inits	fault_solver_dynamic.f90	/^    integer function inits(/;"	f	function:asinh_slatec
+integral_boun	specfem3D_par.F90	/^  double precision, dimension(:), allocatable   :: integral_vol, integral_boun$/;"	v	module:specfem_par
+integral_vol	specfem3D_par.F90	/^  double precision, dimension(:), allocatable   :: integral_vol,/;"	v	module:specfem_par
+intgrl	make_gravity.f90	/^  subroutine intgrl(/;"	s
+invtime	convert_time.f90	/^  subroutine invtime(/;"	s
+irec_master_noise	specfem3D_par.F90	/^  integer :: irec_master_noise$/;"	v	module:specfem_par
+is_CPML	pml_par.f90	/^  logical, dimension(:), allocatable :: is_CPML$/;"	v	module:pml_par
+is_digit	get_cmt.f90	/^  logical function is_digit(/;"	f	subroutine:get_cmt
+is_leap_year	calendar.f90	/^  logical function is_leap_year(/;"	f
+is_moho_bot	specfem3D_par.F90	/^  logical, dimension(:),allocatable :: is_moho_top, is_moho_bot$/;"	v	module:specfem_par
+is_moho_top	specfem3D_par.F90	/^  logical, dimension(:),allocatable :: is_moho_top,/;"	v	module:specfem_par
+is_numeric	get_cmt.f90	/^  logical function is_numeric(/;"	f	subroutine:get_cmt
+islice_selected_rec	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: islice_selected_rec,/;"	v	module:specfem_par
+islice_selected_source	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: islice_selected_source,/;"	v	module:specfem_par
+ispec2D_moho_bot	specfem3D_par.F90	/^  integer :: ispec2D_moho_top,ispec2D_moho_bot$/;"	v	module:specfem_par_elastic
+ispec2D_moho_top	specfem3D_par.F90	/^  integer :: ispec2D_moho_top,/;"	v	module:specfem_par_elastic
+ispec_image_color	create_color_image.f90	/^  integer,dimension(:,:),allocatable :: ispec_image_color$/;"	v	module:image_PNM_par
+ispec_is_acoustic	specfem3D_par.F90	/^  logical, dimension(:), allocatable :: ispec_is_acoustic$/;"	v	module:specfem_par_acoustic
+ispec_is_elastic	specfem3D_par.F90	/^  logical, dimension(:), allocatable :: ispec_is_elastic$/;"	v	module:specfem_par_elastic
+ispec_is_inner	specfem3D_par.F90	/^  logical, dimension(:), allocatable :: ispec_is_inner$/;"	v	module:specfem_par
+ispec_is_poroelastic	specfem3D_par.F90	/^  logical, dimension(:), allocatable :: ispec_is_poroelastic$/;"	v	module:specfem_par_poroelastic
+ispec_is_surface_external_mesh	specfem3D_par.F90	/^  logical, dimension(:), allocatable :: ispec_is_surface_external_mesh$/;"	v	module:specfem_par
+ispec_selected_rec	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: islice_selected_rec,ispec_selected_rec$/;"	v	module:specfem_par
+ispec_selected_source	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: islice_selected_source,ispec_selected_source$/;"	v	module:specfem_par
+istage	specfem3D_par.F90	/^  integer :: NSTAGE_TIME_SCHEME,istage$/;"	v	module:specfem_par
+it	specfem3D_par.F90	/^  integer :: it$/;"	v	module:specfem_par
+it_print_elapsed_time	check_stability.f90	/^  subroutine it_print_elapsed_time(/;"	s
+it_read_forward_arrays	iterate_time.F90	/^  subroutine it_read_forward_arrays(/;"	s
+it_transfer_from_GPU	iterate_time.F90	/^  subroutine it_transfer_from_GPU(/;"	s
+it_update_vtkwindow	iterate_time.F90	/^  subroutine it_update_vtkwindow(/;"	s
+iterate_time	iterate_time.F90	/^  subroutine iterate_time(/;"	s
+itopo_bathy	specfem3D_par.F90	/^  integer, dimension(:,:), allocatable :: itopo_bathy$/;"	v	module:specfem_par
+jacobian	specfem3D_par.F90	/^        xix,xiy,xiz,etax,etay,etaz,gammax,gammay,gammaz,jacobian$/;"	v	module:specfem_par
+julian_day	get_cmt.f90	/^  integer function julian_day(/;"	f
+kappa_ac_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_ac_kl, kappa_ac_kl,/;"	v	module:specfem_par_acoustic
+kappa_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_kl, mu_kl, kappa_kl$/;"	v	module:specfem_par_elastic
+kappaarraystore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: kappaarraystore$/;"	v	module:specfem_par_poroelastic
+kappastore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: kappastore,/;"	v	module:specfem_par
+kin_dt	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL) :: kin_dt$/;"	v	module:fault_solver_common
+kin_it	fault_solver_common.f90	/^    integer :: kin_it$/;"	v	module:fault_solver_common
+kind	fault_solver_common.f90	/^    integer :: kind$/;"	k	type:swf_type
+l_interface_parameter_computation	pml_compute_accel_contribution.f90	/^subroutine l_interface_parameter_computation(/;"	s
+l_parameter_computation	pml_compute_accel_contribution.f90	/^subroutine l_parameter_computation(/;"	s
+lijk_parameter_computation	pml_compute_memory_variables.f90	/^subroutine lijk_parameter_computation(/;"	s
+load_stress_drop	fault_solver_dynamic.f90	/^    subroutine load_stress_drop /;"	s	subroutine:init_one_fault
+load_stress_tpv35	fault_solver_dynamic.f90	/^    subroutine load_stress_tpv35 /;"	s	subroutine:init_one_fault
+load_vslip_snapshots	fault_solver_kinematic.f90	/^subroutine load_vslip_snapshots(/;"	s	module:fault_solver_kinematic
+locate_receivers	locate_receivers.f90	/^  subroutine locate_receivers(/;"	s
+locate_source	locate_source.F90	/^  subroutine locate_source(/;"	s
+lpyr	get_cmt.f90	/^  integer function lpyr(/;"	f
+lx_parameter_computation	pml_compute_memory_variables.f90	/^subroutine lx_parameter_computation(/;"	s
+lxy_interface_parameter_computation	pml_compute_memory_variables.f90	/^subroutine lxy_interface_parameter_computation(/;"	s
+ly_parameter_computation	pml_compute_memory_variables.f90	/^subroutine ly_parameter_computation(/;"	s
+lz_parameter_computation	pml_compute_memory_variables.f90	/^subroutine lz_parameter_computation(/;"	s
+make_frictional_stress	fault_solver_dynamic.f90	/^    subroutine make_frictional_stress$/;"	s	subroutine:init_one_fault
+make_gravity	make_gravity.f90	/^  subroutine make_gravity(/;"	s
+mask_noise	specfem3D_par.F90	/^             normal_x_noise,normal_y_noise,normal_z_noise, mask_noise$/;"	v	module:specfem_par
+max_nibool_interfaces_ext_mesh	assemble_MPI_vector.f90	/^  integer :: num_interfaces_ext_mesh,max_nibool_interfaces_ext_mesh$/;"	v
+max_nibool_interfaces_ext_mesh	specfem3D_par.F90	/^  integer :: max_nibool_interfaces_ext_mesh$/;"	v	module:specfem_par
+memory_eval_gpu	prepare_timerun.F90	/^    subroutine memory_eval_gpu(/;"	s	subroutine:prepare_timerun_GPU
+min_distance_between_CPML_parameter	pml_par.f90	/^  real(kind=CUSTOM_REAL) :: min_distance_between_CPML_parameter$/;"	v	module:pml_par
+min_resolved_period	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) :: min_resolved_period$/;"	v	module:specfem_par_elastic
+minus_deriv_gravity	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: minus_deriv_gravity,/;"	v	module:specfem_par
+minus_g	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:),allocatable :: minus_deriv_gravity,minus_g$/;"	v	module:specfem_par
+model_prem_iso	make_gravity.f90	/^  subroutine model_prem_iso(/;"	s
+model_speed_max	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL):: model_speed_max$/;"	v	module:specfem_par
+moho_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:),allocatable :: moho_kl$/;"	v	module:specfem_par_elastic
+mu_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_kl, mu_kl,/;"	v	module:specfem_par_elastic
+mufr_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rhot_kl, rhof_kl, sm_kl, eta_kl, mufr_kl,/;"	v	module:specfem_par_poroelastic
+mufrb_kl	specfem3D_par.F90	/^    C_kl, M_kl, rhob_kl, rhofb_kl, phi_kl, Bb_kl, Cb_kl, Mb_kl, mufrb_kl,/;"	v	module:specfem_par_poroelastic
+mustore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: kappastore,mustore$/;"	v	module:specfem_par
+my_neighbours_ext_mesh	assemble_MPI_vector.f90	/^  integer, dimension(num_interfaces_ext_mesh) :: nibool_interfaces_ext_mesh,my_neighbours_ext_mesh$/;"	v
+my_neighbours_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: my_neighbours_ext_mesh$/;"	v	module:specfem_par
+myrank	specfem3D_par.F90	/^  integer :: myrank,/;"	v	module:specfem_par
+nadj_rec_local	specfem3D_par.F90	/^  integer :: nadj_rec_local$/;"	v	module:specfem_par
+name	fault_solver_common.f90	/^    character(len=MAX_STRING_LEN), dimension(:), pointer :: name /;"	k	type:dataT_type
+nb_pixel_loc	create_color_image.f90	/^  integer :: nb_pixel_loc$/;"	v	module:image_PNM_par
+nb_pixel_per_proc	create_color_image.f90	/^  integer,dimension(:),allocatable :: nb_pixel_per_proc$/;"	v	module:image_PNM_par
+ndat	fault_solver_common.f90	/^    integer :: npoin=0, ndat=/;"	k	type:dataT_type
+network_name	specfem3D_par.F90	/^  character(len=MAX_LENGTH_NETWORK_NAME), allocatable, dimension(:) :: network_name$/;"	v	module:specfem_par
+nfaces_perproc_surface	specfem3D_par.F90	/^  integer,dimension(:),allocatable :: nfaces_perproc_surface$/;"	v	module:specfem_par_movie
+nfaces_surface	specfem3D_par.F90	/^  integer :: nfaces_surface,/;"	v	module:specfem_par_movie
+nfaces_surface_glob_ext_mesh	specfem3D_par.F90	/^  integer :: nfaces_surface_glob_ext_mesh,/;"	v	module:specfem_par_movie
+nfaces_surface_glob_points	specfem3D_par.F90	/^  integer :: nfaces_surface_glob_ext_mesh,nfaces_surface_glob_points$/;"	v	module:specfem_par_movie
+nfaces_surface_points	specfem3D_par.F90	/^  integer :: nfaces_surface,nfaces_surface_points$/;"	v	module:specfem_par_movie
+nglob	fault_solver_common.f90	/^    integer :: nspec=0, nglob=/;"	k	type:fault_type
+nglob_interface_PML_acoustic	pml_par.f90	/^  integer :: nglob_interface_PML_acoustic,/;"	v	module:pml_par
+nglob_interface_PML_elastic	pml_par.f90	/^  integer :: nglob_interface_PML_acoustic,nglob_interface_PML_elastic$/;"	v	module:pml_par
+nibool_interfaces_ext_mesh	assemble_MPI_vector.f90	/^  integer, dimension(num_interfaces_ext_mesh) :: nibool_interfaces_ext_mesh,/;"	v
+nibool_interfaces_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: nibool_interfaces_ext_mesh$/;"	v	module:specfem_par
+noise_distribution_dir_non_uni	noise_tomography.f90	/^  subroutine noise_distribution_dir_non_uni(/;"	s	module:user_noise_distribution
+noise_distribution_direction	noise_tomography.f90	/^  subroutine noise_distribution_direction(/;"	s	module:user_noise_distribution
+noise_distribution_direction_d	noise_tomography.f90	/^  subroutine noise_distribution_direction_d(/;"	s	module:user_noise_distribution
+noise_read_add_surface_movie	noise_tomography.f90	/^  subroutine noise_read_add_surface_movie(/;"	s
+noise_read_add_surface_movie_GPU	noise_tomography.f90	/^  subroutine noise_read_add_surface_movie_GPU(/;"	s
+noise_save_surface_movie	noise_tomography.f90	/^  subroutine noise_save_surface_movie(/;"	s
+noise_sourcearray	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: noise_sourcearray$/;"	v	module:specfem_par
+noise_surface_movie	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: noise_surface_movie$/;"	v	module:specfem_par
+normal_moho_bot	specfem3D_par.F90	/^  real(CUSTOM_REAL), dimension(:,:,:),allocatable :: normal_moho_bot$/;"	v	module:specfem_par
+normal_moho_top	specfem3D_par.F90	/^  real(CUSTOM_REAL), dimension(:,:,:),allocatable :: normal_moho_top$/;"	v	module:specfem_par
+normal_x_noise	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: &$/;"	v	module:specfem_par
+normal_y_noise	specfem3D_par.F90	/^             normal_x_noise,normal_y_noise,/;"	v	module:specfem_par
+normal_z_noise	specfem3D_par.F90	/^             normal_x_noise,normal_y_noise,normal_z_noise,/;"	v	module:specfem_par
+normalize_3d_vector	fault_solver_common.f90	/^subroutine normalize_3d_vector(/;"	s	module:fault_solver_common
+npoin	fault_solver_common.f90	/^    integer                                       :: npoin=/;"	k	type:dataXZ_type
+npoin	fault_solver_common.f90	/^    integer :: npoin=/;"	k	type:dataT_type
+npoin_perproc	fault_solver_common.f90	/^    integer, dimension(:),   pointer :: npoin_perproc /;"	v	module:fault_solver_common
+nrec	specfem3D_par.F90	/^  integer :: nrec,/;"	v	module:specfem_par
+nrec_local	specfem3D_par.F90	/^  integer :: nrec,nrec_local,/;"	v	module:specfem_par
+nrec_tot_found	specfem3D_par.F90	/^  integer :: nrec,nrec_local,nrec_tot_found$/;"	v	module:specfem_par
+nsources_local	specfem3D_par.F90	/^  integer :: nsources_local$/;"	v	module:specfem_par
+nspec	fault_solver_common.f90	/^    integer :: nspec=/;"	k	type:fault_type
+nspec2D_xmax	specfem3D_par.F90	/^  integer :: nspec2D_xmin,nspec2D_xmax,/;"	v	module:specfem_par
+nspec2D_xmin	specfem3D_par.F90	/^  integer :: nspec2D_xmin,/;"	v	module:specfem_par
+nspec2D_ymax	specfem3D_par.F90	/^  integer :: nspec2D_xmin,nspec2D_xmax,nspec2D_ymin,nspec2D_ymax,/;"	v	module:specfem_par
+nspec2D_ymin	specfem3D_par.F90	/^  integer :: nspec2D_xmin,nspec2D_xmax,nspec2D_ymin,/;"	v	module:specfem_par
+nspec_acoustic	specfem3D_par.F90	/^  integer :: nspec_acoustic$/;"	v	module:specfem_par_acoustic
+nspec_elastic	specfem3D_par.F90	/^  integer :: nspec_elastic$/;"	v	module:specfem_par_elastic
+nspec_inner_acoustic	specfem3D_par.F90	/^  integer :: num_phase_ispec_acoustic,nspec_inner_acoustic,/;"	v	module:specfem_par_acoustic
+nspec_inner_elastic	specfem3D_par.F90	/^  integer :: num_phase_ispec_elastic,nspec_inner_elastic,/;"	v	module:specfem_par_elastic
+nspec_inner_poroelastic	specfem3D_par.F90	/^  integer :: num_phase_ispec_poroelastic,nspec_inner_poroelastic,/;"	v	module:specfem_par_poroelastic
+nspec_outer_acoustic	specfem3D_par.F90	/^  integer :: num_phase_ispec_acoustic,nspec_inner_acoustic,nspec_outer_acoustic$/;"	v	module:specfem_par_acoustic
+nspec_outer_elastic	specfem3D_par.F90	/^  integer :: num_phase_ispec_elastic,nspec_inner_elastic,nspec_outer_elastic$/;"	v	module:specfem_par_elastic
+nspec_outer_poroelastic	specfem3D_par.F90	/^  integer :: num_phase_ispec_poroelastic,nspec_inner_poroelastic,nspec_outer_poroelastic$/;"	v	module:specfem_par_poroelastic
+nstat	gravity_perturbation.f90	/^  integer nstat,/;"	v	module:gravity_perturbation
+nstat_local	gravity_perturbation.f90	/^  integer nstat,ntimgap,nstat_local$/;"	v	module:gravity_perturbation
+nt	fault_solver_common.f90	/^    inte/;"	k	type:dataT_type
+ntimgap	gravity_perturbation.f90	/^  integer nstat,ntimgap,/;"	v	module:gravity_perturbation
+nu	specfem3D_par.F90	/^  double precision, allocatable, dimension(:,:,:) :: nu$/;"	v	module:specfem_par
+nu_source	specfem3D_par.F90	/^  double precision, dimension(:,:,:), allocatable :: nu_source$/;"	v	module:specfem_par
+num_abs_boundary_faces	specfem3D_par.F90	/^  integer :: num_abs_boundary_faces$/;"	v	module:specfem_par
+num_colors_inner_acoustic	specfem3D_par.F90	/^  integer :: num_colors_outer_acoustic,num_colors_inner_acoustic$/;"	v	module:specfem_par_acoustic
+num_colors_inner_elastic	specfem3D_par.F90	/^  integer :: num_colors_outer_elastic,num_colors_inner_elastic$/;"	v	module:specfem_par_elastic
+num_colors_outer_acoustic	specfem3D_par.F90	/^  integer :: num_colors_outer_acoustic,/;"	v	module:specfem_par_acoustic
+num_colors_outer_elastic	specfem3D_par.F90	/^  integer :: num_colors_outer_elastic,/;"	v	module:specfem_par_elastic
+num_coupling_ac_el_faces	specfem3D_par.F90	/^  integer :: num_coupling_ac_el_faces$/;"	v	module:specfem_par_acoustic
+num_coupling_ac_po_faces	specfem3D_par.F90	/^  integer :: num_coupling_ac_po_faces$/;"	v	module:specfem_par_acoustic
+num_coupling_el_po_faces	specfem3D_par.F90	/^  integer :: num_coupling_el_po_faces$/;"	v	module:specfem_par_poroelastic
+num_elem_colors_acoustic	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: num_elem_colors_acoustic$/;"	v	module:specfem_par_acoustic
+num_elem_colors_elastic	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: num_elem_colors_elastic$/;"	v	module:specfem_par_elastic
+num_free_surface_faces	specfem3D_par.F90	/^  integer :: num_free_surface_faces$/;"	v	module:specfem_par
+num_interfaces_ext_mesh	assemble_MPI_vector.f90	/^  integer :: num_interfaces_ext_mesh,/;"	v
+num_interfaces_ext_mesh	specfem3D_par.F90	/^  integer :: num_interfaces_ext_mesh$/;"	v	module:specfem_par
+num_phase_ispec_acoustic	specfem3D_par.F90	/^  integer :: num_phase_ispec_acoustic,/;"	v	module:specfem_par_acoustic
+num_phase_ispec_elastic	specfem3D_par.F90	/^  integer :: num_phase_ispec_elastic,/;"	v	module:specfem_par_elastic
+num_phase_ispec_poroelastic	specfem3D_par.F90	/^  integer :: num_phase_ispec_poroelastic,/;"	v	module:specfem_par_poroelastic
+num_pixel_loc	create_color_image.f90	/^  integer,dimension(:),allocatable :: num_pixel_loc$/;"	v	module:image_PNM_par
+num_pixel_recv	create_color_image.f90	/^  integer,dimension(:,:),allocatable :: num_pixel_recv$/;"	v	module:image_PNM_par
+number_receiver_global	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: number_receiver_global$/;"	v	module:specfem_par
+one_minus_sum_beta	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: one_minus_sum_beta,/;"	v	module:specfem_par_elastic
+one_minus_sum_beta_kappa	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: one_minus_sum_beta,one_minus_sum_beta_kappa$/;"	v	module:specfem_par_elastic
+perform_write_adios_kernels	save_kernels_adios.F90	/^subroutine perform_write_adios_kernels(/;"	s
+perform_write_adios_kernels	specfem3D_adios_stubs.f90	/^subroutine perform_write_adios_kernels(/;"	s
+permstore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: permstore$/;"	v	module:specfem_par_poroelastic
+phase_ispec_inner_acoustic	specfem3D_par.F90	/^  integer, dimension(:,:), allocatable :: phase_ispec_inner_acoustic$/;"	v	module:specfem_par_acoustic
+phase_ispec_inner_elastic	specfem3D_par.F90	/^  integer, dimension(:,:), allocatable :: phase_ispec_inner_elastic$/;"	v	module:specfem_par_elastic
+phase_ispec_inner_poroelastic	specfem3D_par.F90	/^  integer, dimension(:,:), allocatable :: phase_ispec_inner_poroelastic$/;"	v	module:specfem_par_poroelastic
+phi_kl	specfem3D_par.F90	/^    C_kl, M_kl, rhob_kl, rhofb_kl, phi_kl,/;"	v	module:specfem_par_poroelastic
+phib_kl	specfem3D_par.F90	/^    rhobb_kl, rhofbb_kl, phib_kl,/;"	v	module:specfem_par_poroelastic
+phistore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: phistore$/;"	v	module:specfem_par_poroelastic
+pm1_source_encoding	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: pm1_source_encoding$/;"	v	module:specfem_par
+pml_allocate_arrays	pml_allocate_arrays.f90	/^  subroutine pml_allocate_arrays(/;"	s
+pml_allocate_arrays_dummy	pml_allocate_arrays.f90	/^  subroutine pml_allocate_arrays_dummy(/;"	s
+pml_cleanup	pml_allocate_arrays.f90	/^  subroutine pml_cleanup(/;"	s
+pml_compute_accel_contribution_acoustic	pml_compute_accel_contribution.f90	/^subroutine pml_compute_accel_contribution_acoustic(/;"	s
+pml_compute_accel_contribution_elastic	pml_compute_accel_contribution.f90	/^subroutine pml_compute_accel_contribution_elastic(/;"	s
+pml_compute_memory_variables_acoustic	pml_compute_memory_variables.f90	/^subroutine pml_compute_memory_variables_acoustic(/;"	s
+pml_compute_memory_variables_acoustic_elastic	pml_compute_memory_variables.f90	/^subroutine pml_compute_memory_variables_acoustic_elastic(/;"	s
+pml_compute_memory_variables_elastic	pml_compute_memory_variables.f90	/^subroutine pml_compute_memory_variables_elastic(/;"	s
+pml_compute_memory_variables_elastic_acoustic	pml_compute_memory_variables.f90	/^subroutine pml_compute_memory_variables_elastic_acoustic(/;"	s
+pml_output_VTKs	pml_output_VTKs.f90	/^subroutine pml_output_VTKs(/;"	s
+pml_par	pml_par.f90	/^module pml_par$/;"	m
+points_interface_PML_acoustic	pml_par.f90	/^  integer, dimension(:), allocatable :: points_interface_PML_acoustic,/;"	v	module:pml_par
+points_interface_PML_elastic	pml_par.f90	/^  integer, dimension(:), allocatable :: points_interface_PML_acoustic, points_interface_PML_elastic$/;"	v	module:pml_par
+potential_acoustic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: potential_acoustic,/;"	v	module:specfem_par_acoustic
+potential_acoustic_adj_coupling	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: potential_acoustic_adj_coupling$/;"	v	module:specfem_par_acoustic
+potential_acoustic_lddrk	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: potential_acoustic_lddrk,/;"	v	module:specfem_par_acoustic
+potential_dot_acoustic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: potential_acoustic,potential_dot_acoustic,/;"	v	module:specfem_par_acoustic
+potential_dot_acoustic_lddrk	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: potential_acoustic_lddrk,potential_dot_acoustic_lddrk$/;"	v	module:specfem_par_acoustic
+potential_dot_dot_acoustic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: potential_acoustic,potential_dot_acoustic, &$/;"	v	module:specfem_par_acoustic
+potential_dot_dot_acoustic_CPML	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: potential_dot_dot_acoustic_CPML$/;"	v	module:pml_par
+prem_density	make_gravity.f90	/^  subroutine prem_density(/;"	s
+prepare_timerun	prepare_timerun.F90	/^  subroutine prepare_timerun(/;"	s
+prepare_timerun_GPU	prepare_timerun.F90	/^  subroutine prepare_timerun_GPU(/;"	s
+prepare_timerun_OpenMP	prepare_timerun.F90	/^  subroutine prepare_timerun_OpenMP(/;"	s
+prepare_timerun_adjoint	prepare_timerun.F90	/^  subroutine prepare_timerun_adjoint(/;"	s
+prepare_timerun_attenuation	prepare_timerun.F90	/^  subroutine prepare_timerun_attenuation(/;"	s
+prepare_timerun_constants	prepare_timerun.F90	/^  subroutine prepare_timerun_constants(/;"	s
+prepare_timerun_gravity	prepare_timerun.F90	/^  subroutine prepare_timerun_gravity(/;"	s
+prepare_timerun_init_wavefield	prepare_timerun.F90	/^  subroutine prepare_timerun_init_wavefield(/;"	s
+prepare_timerun_lddrk	prepare_timerun.F90	/^  subroutine prepare_timerun_lddrk(/;"	s
+prepare_timerun_mass_matrices	prepare_timerun.F90	/^  subroutine prepare_timerun_mass_matrices(/;"	s
+prepare_timerun_noise	prepare_timerun.F90	/^  subroutine prepare_timerun_noise(/;"	s
+prepare_timerun_pml	prepare_timerun.F90	/^  subroutine prepare_timerun_pml(/;"	s
+prepare_timerun_user_output	prepare_timerun.F90	/^  subroutine prepare_timerun_user_output(/;"	s
+print_stf_file	setup_sources_receivers.f90	/^  subroutine print_stf_file(/;"	s
+prname	specfem3D_par.F90	/^  character(len=MAX_STRING_LEN) :: prname,/;"	v	module:specfem_par
+prname_Q	specfem3D_par.F90	/^  character(len=MAX_STRING_LEN) :: prname_Q$/;"	v	module:specfem_par
+ratio_kl	specfem3D_par.F90	/^    rhobb_kl, rhofbb_kl, phib_kl, cpI_kl, cpII_kl, cs_kl, ratio_kl$/;"	v	module:specfem_par_poroelastic
+read_external_source_time_function	read_external_stf.f90	/^  subroutine read_external_source_time_function(/;"	s
+read_field_on_pml_interface	pml_compute_accel_contribution.f90	/^subroutine read_field_on_pml_interface(/;"	s
+read_forward_arrays_adios	read_forward_arrays_adios.F90	/^subroutine read_forward_arrays_adios(/;"	s
+read_forward_arrays_adios	specfem3D_adios_stubs.f90	/^subroutine read_forward_arrays_adios(/;"	s
+read_mesh_databases	read_mesh_databases.F90	/^  subroutine read_mesh_databases(/;"	s
+read_mesh_databases_adios	read_mesh_databases_adios.F90	/^subroutine read_mesh_databases_adios(/;"	s
+read_mesh_databases_adios	specfem3D_adios_stubs.f90	/^subroutine read_mesh_databases_adios(/;"	s
+read_mesh_databases_adjoint	read_mesh_databases.F90	/^  subroutine read_mesh_databases_adjoint(/;"	s
+read_mesh_databases_moho	read_mesh_databases.F90	/^  subroutine read_mesh_databases_moho(/;"	s
+read_mesh_databases_moho_adios	read_mesh_databases_adios.F90	/^subroutine read_mesh_databases_moho_adios(/;"	s
+read_mesh_databases_moho_adios	specfem3D_adios_stubs.f90	/^subroutine read_mesh_databases_moho_adios(/;"	s
+read_mesh_for_init	read_mesh_databases.F90	/^  subroutine read_mesh_for_init(/;"	s
+read_mesh_for_init_ADIOS	read_mesh_databases_adios.F90	/^subroutine read_mesh_for_init_ADIOS(/;"	s
+read_mesh_for_init_ADIOS	specfem3D_adios_stubs.f90	/^subroutine read_mesh_for_init_ADIOS(/;"	s
+read_parameters_noise	noise_tomography.f90	/^  subroutine read_parameters_noise(/;"	s
+read_potential_on_pml_interface	pml_compute_accel_contribution.f90	/^subroutine read_potential_on_pml_interface(/;"	s
+rec_filename	specfem3D_par.F90	/^  character(len=MAX_STRING_LEN) :: rec_filename,/;"	v	module:specfem_par
+recompute_jacobian_gravity	gravity_perturbation.f90	/^subroutine recompute_jacobian_gravity(/;"	s	module:gravity_perturbation
+request_recv_scalar_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: request_recv_scalar_ext_mesh$/;"	v	module:specfem_par
+request_recv_vector_ext_mesh	assemble_MPI_vector.f90	/^  integer, dimension(num_interfaces_ext_mesh) :: request_send_vector_ext_mesh,request_recv_vector_ext_mesh$/;"	v
+request_recv_vector_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: request_recv_vector_ext_mesh$/;"	v	module:specfem_par
+request_recv_vector_ext_mesh_s	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: request_recv_vector_ext_mesh_s$/;"	v	module:specfem_par
+request_recv_vector_ext_mesh_w	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: request_recv_vector_ext_mesh_w$/;"	v	module:specfem_par
+request_send_scalar_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: request_send_scalar_ext_mesh$/;"	v	module:specfem_par
+request_send_vector_ext_mesh	assemble_MPI_vector.f90	/^  integer, dimension(num_interfaces_ext_mesh) :: request_send_vector_ext_mesh,/;"	v
+request_send_vector_ext_mesh	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: request_send_vector_ext_mesh$/;"	v	module:specfem_par
+request_send_vector_ext_mesh_s	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: request_send_vector_ext_mesh_s$/;"	v	module:specfem_par
+request_send_vector_ext_mesh_w	specfem3D_par.F90	/^  integer, dimension(:), allocatable :: request_send_vector_ext_mesh_w$/;"	v	module:specfem_par
+rho0_wm	gravity_perturbation.f90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rho0_wm$/;"	v	module:gravity_perturbation
+rho_ac_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_ac_kl,/;"	v	module:specfem_par_acoustic
+rho_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_kl,/;"	v	module:specfem_par_elastic
+rho_vp	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_vp,/;"	v	module:specfem_par_elastic
+rho_vpI	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_vpI,/;"	v	module:specfem_par_poroelastic
+rho_vpII	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_vpI,rho_vpII,/;"	v	module:specfem_par_poroelastic
+rho_vs	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_vp,rho_vs$/;"	v	module:specfem_par_elastic
+rho_vsI	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_vpI,rho_vpII,rho_vsI$/;"	v	module:specfem_par_poroelastic
+rhoarraystore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rhoarraystore$/;"	v	module:specfem_par_poroelastic
+rhob_kl	specfem3D_par.F90	/^    C_kl, M_kl, rhob_kl,/;"	v	module:specfem_par_poroelastic
+rhobb_kl	specfem3D_par.F90	/^    C_kl, M_kl, rhob_kl, rhofb_kl, phi_kl, Bb_kl, Cb_kl, Mb_kl, mufrb_kl, &$/;"	v	module:specfem_par_poroelastic
+rhof_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rhot_kl, rhof_kl,/;"	v	module:specfem_par_poroelastic
+rhofb_kl	specfem3D_par.F90	/^    C_kl, M_kl, rhob_kl, rhofb_kl,/;"	v	module:specfem_par_poroelastic
+rhofbb_kl	specfem3D_par.F90	/^    rhobb_kl, rhofbb_kl,/;"	v	module:specfem_par_poroelastic
+rhop_ac_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rho_ac_kl, kappa_ac_kl, &$/;"	v	module:specfem_par_acoustic
+rhostore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rhostore$/;"	v	module:specfem_par
+rhot_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rhot_kl,/;"	v	module:specfem_par_poroelastic
+rmass	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmass$/;"	v	module:specfem_par_elastic
+rmass_acoustic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmass_acoustic$/;"	v	module:specfem_par_acoustic
+rmass_fluid_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmass_solid_poroelastic, &$/;"	v	module:specfem_par_poroelastic
+rmass_ocean_load	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmass_ocean_load$/;"	v	module:specfem_par
+rmass_solid_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmass_solid_poroelastic,/;"	v	module:specfem_par_poroelastic
+rmassx	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmassx,/;"	v	module:specfem_par_elastic
+rmassy	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmassx,rmassy,/;"	v	module:specfem_par_elastic
+rmassz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmassx,rmassy,rmassz$/;"	v	module:specfem_par_elastic
+rmassz_acoustic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: rmassz_acoustic$/;"	v	module:specfem_par_acoustic
+rmemory_coupling_ac_el_displ	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:,:), allocatable :: rmemory_coupling_ac_el_displ$/;"	v	module:pml_par
+rmemory_coupling_el_ac_potential	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:,:), allocatable :: rmemory_coupling_el_ac_potential$/;"	v	module:pml_par
+rmemory_coupling_el_ac_potential_dot_dot	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:,:), allocatable :: rmemory_coupling_el_ac_potential_dot_dot$/;"	v	module:pml_par
+rmemory_displ_elastic	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:,:), allocatable :: rmemory_displ_elastic$/;"	v	module:pml_par
+rmemory_dpotential_dxl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_dpotential_dxl$/;"	v	module:pml_par
+rmemory_dpotential_dyl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_dpotential_dyl$/;"	v	module:pml_par
+rmemory_dpotential_dzl	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_dpotential_dzl$/;"	v	module:pml_par
+rmemory_dux_dxl_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_dux_dxl_x,/;"	v	module:pml_par
+rmemory_dux_dxl_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_dux_dxl_y,/;"	v	module:pml_par
+rmemory_dux_dxl_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_dux_dxl_z,/;"	v	module:pml_par
+rmemory_dux_dyl_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_dux_dxl_x,rmemory_dux_dyl_x,/;"	v	module:pml_par
+rmemory_dux_dyl_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_dux_dxl_y,rmemory_dux_dyl_y$/;"	v	module:pml_par
+rmemory_dux_dzl_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_dux_dxl_x,rmemory_dux_dyl_x,rmemory_dux_dzl_x$/;"	v	module:pml_par
+rmemory_dux_dzl_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_dux_dxl_z,rmemory_dux_dzl_z$/;"	v	module:pml_par
+rmemory_duy_dxl_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_duy_dxl_x,/;"	v	module:pml_par
+rmemory_duy_dxl_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_duy_dxl_y,/;"	v	module:pml_par
+rmemory_duy_dyl_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_duy_dxl_x,rmemory_duy_dyl_x$/;"	v	module:pml_par
+rmemory_duy_dyl_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_duy_dxl_y,rmemory_duy_dyl_y,/;"	v	module:pml_par
+rmemory_duy_dyl_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_duy_dyl_z,/;"	v	module:pml_par
+rmemory_duy_dzl_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_duy_dxl_y,rmemory_duy_dyl_y,rmemory_duy_dzl_y$/;"	v	module:pml_par
+rmemory_duy_dzl_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_duy_dyl_z,rmemory_duy_dzl_z$/;"	v	module:pml_par
+rmemory_duz_dxl_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_duz_dxl_x,/;"	v	module:pml_par
+rmemory_duz_dxl_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_duz_dxl_z,/;"	v	module:pml_par
+rmemory_duz_dyl_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_duz_dzl_y,rmemory_duz_dyl_y$/;"	v	module:pml_par
+rmemory_duz_dyl_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_duz_dxl_z,rmemory_duz_dyl_z,/;"	v	module:pml_par
+rmemory_duz_dzl_x	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_duz_dxl_x,rmemory_duz_dzl_x$/;"	v	module:pml_par
+rmemory_duz_dzl_y	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rmemory_duz_dzl_y,/;"	v	module:pml_par
+rmemory_duz_dzl_z	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_duz_dxl_z,rmemory_duz_dyl_z,rmemory_duz_dzl_z$/;"	v	module:pml_par
+rmemory_potential_acoustic	pml_par.f90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: rmemory_potential_acoustic$/;"	v	module:pml_par
+rotate	fault_solver_common.f90	/^function rotate(/;"	f	module:fault_solver_common
+rsf	fault_solver_common.f90	/^    type(rsf_/;"	v	module:fault_solver_common
+rsf_GPU_init	fault_solver_dynamic.f90	/^  subroutine rsf_GPU_init(/;"	s	module:fault_solver_dynamic
+rsf_init	fault_solver_dynamic.f90	/^  subroutine rsf_init(/;"	s	module:fault_solver_dynamic
+rsf_type	fault_solver_common.f90	/^  type rsf_type$/;"	t	module:fault_solver_common
+rsf_update_state	fault_solver_dynamic.f90	/^  subroutine rsf_update_state(/;"	s	module:fault_solver_dynamic
+rtsafe	fault_solver_dynamic.f90	/^  function rtsafe(/;"	f	module:fault_solver_dynamic
+save_adjoint_kernels	save_adjoint_kernels.f90	/^  subroutine save_adjoint_kernels(/;"	s
+save_field_on_pml_interface	pml_compute_accel_contribution.f90	/^subroutine save_field_on_pml_interface(/;"	s
+save_forward_arrays_adios	save_forward_arrays_adios.F90	/^subroutine save_forward_arrays_adios(/;"	s
+save_forward_arrays_adios	specfem3D_adios_stubs.f90	/^subroutine save_forward_arrays_adios(/;"	s
+save_kernels_Hessian	save_adjoint_kernels.f90	/^  subroutine save_kernels_Hessian(/;"	s
+save_kernels_Hessian_adios	save_kernels_adios.F90	/^subroutine save_kernels_Hessian_adios(/;"	s
+save_kernels_Hessian_adios	specfem3D_adios_stubs.f90	/^subroutine save_kernels_Hessian_adios(/;"	s
+save_kernels_acoustic	save_adjoint_kernels.f90	/^subroutine save_kernels_acoustic(/;"	s
+save_kernels_acoustic_adios	save_kernels_adios.F90	/^subroutine save_kernels_acoustic_adios(/;"	s
+save_kernels_acoustic_adios	specfem3D_adios_stubs.f90	/^subroutine save_kernels_acoustic_adios(/;"	s
+save_kernels_elastic	save_adjoint_kernels.f90	/^  subroutine save_kernels_elastic(/;"	s
+save_kernels_elastic_adios	save_kernels_adios.F90	/^subroutine save_kernels_elastic_adios(/;"	s
+save_kernels_elastic_adios	specfem3D_adios_stubs.f90	/^subroutine save_kernels_elastic_adios(/;"	s
+save_kernels_poroelastic	save_adjoint_kernels.f90	/^  subroutine save_kernels_poroelastic(/;"	s
+save_kernels_poroelastic_adios	save_kernels_adios.F90	/^subroutine save_kernels_poroelastic_adios(/;"	s
+save_kernels_poroelastic_adios	specfem3D_adios_stubs.f90	/^subroutine save_kernels_poroelastic_adios(/;"	s
+save_kernels_source_derivatives	save_adjoint_kernels.f90	/^  subroutine save_kernels_source_derivatives(/;"	s
+save_kernels_strength_noise	noise_tomography.f90	/^  subroutine save_kernels_strength_noise(/;"	s
+save_potential_on_pml_interface	pml_compute_accel_contribution.f90	/^subroutine save_potential_on_pml_interface(/;"	s
+save_weights_kernel	save_adjoint_kernels.f90	/^subroutine save_weights_kernel(/;"	s
+section_hdirx	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_hdirx /;"	v	module:image_PNM_par
+section_hdiry	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_hdiry /;"	v	module:image_PNM_par
+section_hdirz	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_hdirz /;"	v	module:image_PNM_par
+section_nx	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_nx /;"	v	module:image_PNM_par
+section_ny	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_ny /;"	v	module:image_PNM_par
+section_nz	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_nz /;"	v	module:image_PNM_par
+section_vdirx	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_vdirx /;"	v	module:image_PNM_par
+section_vdiry	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_vdiry /;"	v	module:image_PNM_par
+section_vdirz	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_vdirz /;"	v	module:image_PNM_par
+section_xorg	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_xorg /;"	v	module:image_PNM_par
+section_yorg	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_yorg /;"	v	module:image_PNM_par
+section_zorg	create_color_image.f90	/^  real(kind=CUSTOM_REAL),parameter:: section_zorg /;"	v	module:image_PNM_par
+seismograms_a	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: seismograms_d,seismograms_v,seismograms_a,/;"	v	module:specfem_par
+seismograms_d	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: seismograms_d,/;"	v	module:specfem_par
+seismograms_eps	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: seismograms_eps$/;"	v	module:specfem_par
+seismograms_p	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: seismograms_d,seismograms_v,seismograms_a,seismograms_p$/;"	v	module:specfem_par
+seismograms_v	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: seismograms_d,seismograms_v,/;"	v	module:specfem_par
+setup_GLL_points	setup_GLL_points.f90	/^  subroutine setup_GLL_points(/;"	s
+setup_movie_face_indices	setup_movie_meshes.f90	/^  subroutine setup_movie_face_indices(/;"	s
+setup_movie_meshes	setup_movie_meshes.f90	/^  subroutine setup_movie_meshes(/;"	s
+setup_receivers	setup_sources_receivers.f90	/^  subroutine setup_receivers(/;"	s
+setup_receivers_check_acoustic	setup_sources_receivers.f90	/^  subroutine setup_receivers_check_acoustic(/;"	s
+setup_receivers_precompute_intp	setup_sources_receivers.f90	/^  subroutine setup_receivers_precompute_intp(/;"	s
+setup_sources	setup_sources_receivers.f90	/^  subroutine setup_sources(/;"	s
+setup_sources_check_acoustic	setup_sources_receivers.f90	/^  subroutine setup_sources_check_acoustic(/;"	s
+setup_sources_precompute_arrays	setup_sources_receivers.f90	/^  subroutine setup_sources_precompute_arrays(/;"	s
+setup_sources_receivers	setup_sources_receivers.f90	/^  subroutine setup_sources_receivers(/;"	s
+setup_sources_receivers_VTKfile	setup_sources_receivers.f90	/^  subroutine setup_sources_receivers_VTKfile(/;"	s
+shakemap_ux	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: shakemap_ux$/;"	v	module:specfem_par_movie
+shakemap_ux_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: shakemap_ux_all$/;"	v	module:specfem_par_movie
+shakemap_uy	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: shakemap_uy$/;"	v	module:specfem_par_movie
+shakemap_uy_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: shakemap_uy_all$/;"	v	module:specfem_par_movie
+shakemap_uz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: shakemap_uz$/;"	v	module:specfem_par_movie
+shakemap_uz_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: shakemap_uz_all$/;"	v	module:specfem_par_movie
+shortFieldNames	fault_solver_common.f90	/^    character(len=MAX_STRING_LEN) :: shortFieldNames$/;"	k	type:dataT_type
+sigma_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: sigma_kl$/;"	v	module:specfem_par
+sizeprocs	specfem3D_par.F90	/^  integer :: myrank, sizeprocs$/;"	v	module:specfem_par
+sloc_der	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: sloc_der$/;"	v	module:specfem_par
+sm_kl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: rhot_kl, rhof_kl, sm_kl,/;"	v	module:specfem_par_poroelastic
+source_adjoint	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:), allocatable :: source_adjoint$/;"	v	module:specfem_par
+sourcearray	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: sourcearray$/;"	v	module:specfem_par
+sourcearrays	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:,:), allocatable :: sourcearrays$/;"	v	module:specfem_par
+spec_to_CPML	pml_par.f90	/^  integer, dimension(:), allocatable :: spec_to_CPML$/;"	v	module:pml_par
+specfem3D	specfem3D.f90	/^  subroutine specfem3D(/;"	s
+specfem3D_MODULES	rules.mk	/^specfem3D_MODULES = \\$/;"	m
+specfem3D_OBJECTS	rules.mk	/^specfem3D_OBJECTS = \\$/;"	m
+specfem3D_SHARED_OBJECTS	rules.mk	/^specfem3D_SHARED_OBJECTS = \\$/;"	m
+specfem3D_TARGETS	rules.mk	/^specfem3D_TARGETS = \\$/;"	m
+specfem_par	specfem3D_par.F90	/^module specfem_par$/;"	m
+specfem_par_acoustic	specfem3D_par.F90	/^module specfem_par_acoustic$/;"	m
+specfem_par_elastic	specfem3D_par.F90	/^module specfem_par_elastic$/;"	m
+specfem_par_movie	specfem3D_par.F90	/^module specfem_par_movie$/;"	m
+specfem_par_poroelastic	specfem3D_par.F90	/^module specfem_par_poroelastic$/;"	m
+spline_construction	make_gravity.f90	/^  subroutine spline_construction(/;"	s
+spline_evaluation	make_gravity.f90	/^  subroutine spline_evaluation(/;"	s
+station_filter	locate_receivers.f90	/^  subroutine station_filter(/;"	s
+station_name	specfem3D_par.F90	/^  character(len=MAX_LENGTH_STATION_NAME), allocatable, dimension(:) :: station_name$/;"	v	module:specfem_par
+stf_used_total	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) :: stf_used_total$/;"	v	module:specfem_par
+stg	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:), pointer :: stg /;"	k	type:dataXZ_type
+store_dataT	fault_solver_common.f90	/^subroutine store_dataT(/;"	s	module:fault_solver_common
+store_dataXZ	fault_solver_dynamic.f90	/^  subroutine store_dataXZ(/;"	s	module:fault_solver_dynamic
+store_val_ux	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_ux$/;"	v	module:specfem_par_movie
+store_val_ux_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_ux_all$/;"	v	module:specfem_par_movie
+store_val_uy	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_uy$/;"	v	module:specfem_par_movie
+store_val_uy_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_uy_all$/;"	v	module:specfem_par_movie
+store_val_uz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_uz$/;"	v	module:specfem_par_movie
+store_val_uz_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_uz_all$/;"	v	module:specfem_par_movie
+store_val_x	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_x$/;"	v	module:specfem_par_movie
+store_val_x_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_x_all$/;"	v	module:specfem_par_movie
+store_val_y	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_y$/;"	v	module:specfem_par_movie
+store_val_y_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_y_all$/;"	v	module:specfem_par_movie
+store_val_z	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_z$/;"	v	module:specfem_par_movie
+store_val_z_all	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: store_val_z_all$/;"	v	module:specfem_par_movie
+swf	fault_solver_common.f90	/^    type(swf_/;"	v	module:fault_solver_common
+swf_init	fault_solver_dynamic.f90	/^  subroutine swf_init(/;"	s	module:fault_solver_dynamic
+swf_mu	fault_solver_dynamic.f90	/^  function swf_mu(/;"	f	module:fault_solver_dynamic
+swf_type	fault_solver_common.f90	/^  type swf_type$/;"	t	module:fault_solver_common
+swf_update_state	fault_solver_dynamic.f90	/^  subroutine swf_update_state(/;"	s	module:fault_solver_dynamic
+synchronize_GPU	fault_solver_dynamic.f90	/^  subroutine synchronize_GPU(/;"	s	module:fault_solver_dynamic
+synchronize_MPI_vector_blocking_ord	assemble_MPI_vector.f90	/^  subroutine synchronize_MPI_vector_blocking_ord(/;"	s
+synchronize_MPI_vector_write_cuda	assemble_MPI_vector.f90	/^  subroutine synchronize_MPI_vector_write_cuda(/;"	s
+t0	specfem3D_par.F90	/^  double precision :: t0$/;"	v	module:specfem_par
+tau_sigma	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(N_SLS) :: tau_sigma$/;"	v	module:specfem_par_elastic
+temp1	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: temp1,/;"	v	module:specfem_par
+temp2	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: temp1,temp2,/;"	v	module:specfem_par
+temp3	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: temp1,temp2,temp3,/;"	v	module:specfem_par
+temp4	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: temp1,temp2,temp3,temp4$/;"	v	module:specfem_par
+temporary_array_for_sum	specfem3D_par.F90	/^                                                g_x,g_y,g_z,G_xx,G_yy,G_zz,G_xy,G_xz,G_yz,temporary_array_for_sum$/;"	v	module:specfem_par
+tempx1l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempx1l,/;"	v	module:specfem_par_movie
+tempx2l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempx1l,tempx2l,/;"	v	module:specfem_par_movie
+tempx3l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempx1l,tempx2l,tempx3l$/;"	v	module:specfem_par_movie
+tempy1l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempy1l,/;"	v	module:specfem_par_movie
+tempy2l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempy1l,tempy2l,/;"	v	module:specfem_par_movie
+tempy3l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempy1l,tempy2l,tempy3l$/;"	v	module:specfem_par_movie
+tempz1l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempz1l,/;"	v	module:specfem_par_movie
+tempz2l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempz1l,tempz2l,/;"	v	module:specfem_par_movie
+tempz3l	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) tempz1l,tempz2l,tempz3l$/;"	v	module:specfem_par_movie
+theta	pml_par.f90	/^  real(kind=CUSTOM_REAL), parameter :: theta /;"	v	module:pml_par
+time_start	specfem3D_par.F90	/^  double precision :: time_start$/;"	v	module:specfem_par
+tortstore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: etastore,tortstore$/;"	v	module:specfem_par_poroelastic
+transfer_boundary_to_device	assemble_MPI_vector.f90	/^  subroutine transfer_boundary_to_device(/;"	s
+transfer_faultdata_GPU	fault_solver_dynamic.f90	/^  subroutine transfer_faultdata_GPU(/;"	s	module:fault_solver_dynamic
+tshift_src	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: tshift_src,/;"	v	module:specfem_par
+update_acoustic_lddrk	update_displacement_LDDRK.f90	/^  subroutine update_acoustic_lddrk(/;"	s
+update_displ_lddrk	update_displacement_LDDRK.f90	/^  subroutine update_displ_lddrk(/;"	s
+update_displ_lddrk_backward	update_displacement_LDDRK.f90	/^  subroutine update_displ_lddrk_backward(/;"	s
+update_displacement_acoustic	update_displacement_scheme.f90	/^  subroutine update_displacement_acoustic(/;"	s
+update_displacement_elastic	update_displacement_scheme.f90	/^  subroutine update_displacement_elastic(/;"	s
+update_displacement_poroelastic	update_displacement_scheme.f90	/^  subroutine update_displacement_poroelastic(/;"	s
+update_displacement_scheme	update_displacement_scheme.f90	/^  subroutine update_displacement_scheme(/;"	s
+update_elastic_lddrk	update_displacement_LDDRK.f90	/^  subroutine update_elastic_lddrk(/;"	s
+update_potential_dot_acoustic_lddrk	update_displacement_LDDRK.f90	/^  subroutine update_potential_dot_acoustic_lddrk(/;"	s
+update_veloc_elastic_lddrk	update_displacement_LDDRK.f90	/^  subroutine update_veloc_elastic_lddrk(/;"	s
+update_veloc_elastic_lddrk_backward	update_displacement_LDDRK.f90	/^  subroutine update_veloc_elastic_lddrk_backward(/;"	s
+user_noise_distribution	noise_tomography.f90	/^module user_noise_distribution$/;"	m
+user_source_time_function	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: user_source_time_function$/;"	v	module:specfem_par
+utm_x_source	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: utm_x_source,/;"	v	module:specfem_par
+utm_y_source	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: utm_x_source,utm_y_source$/;"	v	module:specfem_par
+v_kin_t1	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:,:), pointer :: v_kin_t1,/;"	v	module:fault_solver_common
+v_kin_t2	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:,:), pointer :: v_kin_t1,v_kin_t2$/;"	v	module:fault_solver_common
+veloc	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: displ,veloc,/;"	v	module:specfem_par_elastic
+veloc_lddrk	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: displ_lddrk,veloc_lddrk$/;"	v	module:specfem_par_elastic
+velocity_x	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable:: velocity_x,/;"	v	module:specfem_par_movie
+velocity_y	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable:: velocity_x,velocity_y,/;"	v	module:specfem_par_movie
+velocity_z	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:),allocatable:: velocity_x,velocity_y,velocity_z$/;"	v	module:specfem_par_movie
+velocs_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accels_poroelastic,velocs_poroelastic,/;"	v	module:specfem_par_poroelastic
+velocw_poroelastic	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:), allocatable :: accelw_poroelastic,velocw_poroelastic,/;"	v	module:specfem_par_poroelastic
+wgll_cube	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: wgll_cube$/;"	v	module:specfem_par
+wgllwgll_xy	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY) :: wgllwgll_xy$/;"	v	module:specfem_par
+wgllwgll_xy_3D	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: wgllwgll_xy_3D,/;"	v	module:specfem_par
+wgllwgll_xz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLZ) :: wgllwgll_xz$/;"	v	module:specfem_par
+wgllwgll_xz_3D	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: wgllwgll_xy_3D,wgllwgll_xz_3D,/;"	v	module:specfem_par
+wgllwgll_yz	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLY,NGLLZ) :: wgllwgll_yz$/;"	v	module:specfem_par
+wgllwgll_yz_3D	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(NGLLX,NGLLY,NGLLZ) :: wgllwgll_xy_3D,wgllwgll_xz_3D,wgllwgll_yz_3D$/;"	v	module:specfem_par
+wmo_create_shakemap	write_movie_output.F90	/^  subroutine wmo_create_shakemap(/;"	s
+wmo_get_max_vector_norm	write_movie_output.F90	/^  subroutine wmo_get_max_vector_norm(/;"	s
+wmo_get_max_vector_top	write_movie_output.F90	/^  subroutine wmo_get_max_vector_top(/;"	s
+wmo_get_vel_vector	write_movie_output.F90	/^  subroutine wmo_get_vel_vector(/;"	s
+wmo_movie_div_curl	write_movie_output.F90	/^  subroutine wmo_movie_div_curl(/;"	s
+wmo_movie_surface_output	write_movie_output.F90	/^  subroutine wmo_movie_surface_output(/;"	s
+wmo_movie_volume_output	write_movie_output.F90	/^  subroutine wmo_movie_volume_output(/;"	s
+wmo_save_shakemap	write_movie_output.F90	/^  subroutine wmo_save_shakemap(/;"	s
+write_PNM_create_image	create_color_image.f90	/^  subroutine write_PNM_create_image(/;"	s
+write_PNM_data	create_color_image.f90	/^  subroutine write_PNM_data(/;"	s
+write_PNM_initialize	create_color_image.f90	/^  subroutine write_PNM_initialize(/;"	s
+write_PNM_vp_background	create_color_image.f90	/^  subroutine write_PNM_vp_background(/;"	s
+write_SU_header	write_output_SU.f90	/^  subroutine write_SU_header(/;"	s
+write_adj_seismograms2_to_file	write_seismograms.f90	/^  subroutine write_adj_seismograms2_to_file(/;"	s
+write_adj_seismograms_to_file	write_seismograms.f90	/^  subroutine write_adj_seismograms_to_file(/;"	s
+write_channel_name	write_seismograms.f90	/^  subroutine write_channel_name(/;"	s
+write_dataXZ	fault_solver_dynamic.f90	/^  subroutine write_dataXZ(/;"	s	module:fault_solver_dynamic
+write_dataXZ	fault_solver_kinematic.f90	/^subroutine write_dataXZ(/;"	s	module:fault_solver_kinematic
+write_movie_output	write_movie_output.F90	/^  subroutine write_movie_output(/;"	s
+write_one_seismogram	write_seismograms.f90	/^  subroutine write_one_seismogram(/;"	s
+write_output_ASCII_or_binary	write_output_ASCII_or_binary.f90	/^  subroutine write_output_ASCII_or_binary(/;"	s
+write_output_SU	write_output_SU.f90	/^  subroutine write_output_SU(/;"	s
+write_seismograms	write_seismograms.f90	/^  subroutine write_seismograms(/;"	s
+write_seismograms_to_file	write_seismograms.f90	/^  subroutine write_seismograms_to_file(/;"	s
+wxgll	specfem3D_par.F90	/^  double precision, dimension(NGLLX) :: xigll,wxgll$/;"	v	module:specfem_par
+wygll	specfem3D_par.F90	/^  double precision, dimension(NGLLY) :: yigll,wygll$/;"	v	module:specfem_par
+wzgll	specfem3D_par.F90	/^  double precision, dimension(NGLLZ) :: zigll,wzgll$/;"	v	module:specfem_par
+x_observation	specfem3D_par.F90	/^  double precision, dimension(NTOTAL_OBSERVATION) :: x_observation,/;"	v	module:specfem_par
+xcoord	fault_solver_common.f90	/^    real(kind=CUSTOM_REAL), dimension(:), pointer :: xcoord /;"	k	type:dataXZ_type
+xi_receiver	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: xi_receiver,/;"	v	module:specfem_par
+xi_source	specfem3D_par.F90	/^  double precision, dimension(:), allocatable :: xi_source,/;"	v	module:specfem_par
+xigll	specfem3D_par.F90	/^  double precision, dimension(NGLLX) :: xigll,/;"	v	module:specfem_par
+xix	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:,:,:,:), allocatable :: &$/;"	v	module:specfem_par
+xixl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,/;"	v	module:specfem_par_movie
+xiy	specfem3D_par.F90	/^        xix,xiy,/;"	v	module:specfem_par
+xiyl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,xiyl,/;"	v	module:specfem_par_movie
+xiz	specfem3D_par.F90	/^        xix,xiy,xiz,/;"	v	module:specfem_par
+xizl	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL) xixl,xiyl,xizl,/;"	v	module:specfem_par_movie
+xspecfem3D	program_specfem3D.f90	/^  program xspecfem3D$/;"	p
+xstat	gravity_perturbation.f90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: xstat,/;"	v	module:gravity_perturbation
+xstore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: xstore,/;"	v	module:specfem_par
+y_observation	specfem3D_par.F90	/^  double precision, dimension(NTOTAL_OBSERVATION) :: x_observation,y_observation,/;"	v	module:specfem_par
+yigll	specfem3D_par.F90	/^  double precision, dimension(NGLLY) :: yigll,/;"	v	module:specfem_par
+ystat	gravity_perturbation.f90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: xstat,ystat,/;"	v	module:gravity_perturbation
+ystore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: xstore,ystore,/;"	v	module:specfem_par
+z_observation	specfem3D_par.F90	/^  double precision, dimension(NTOTAL_OBSERVATION) :: x_observation,y_observation,z_observation,/;"	v	module:specfem_par
+zigll	specfem3D_par.F90	/^  double precision, dimension(NGLLZ) :: zigll,/;"	v	module:specfem_par
+zstat	gravity_perturbation.f90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: xstat,ystat,zstat$/;"	v	module:gravity_perturbation
+zstore	specfem3D_par.F90	/^  real(kind=CUSTOM_REAL), dimension(:), allocatable :: xstore,ystore,zstore$/;"	v	module:specfem_par

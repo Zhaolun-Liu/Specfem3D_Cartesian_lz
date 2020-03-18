@@ -1,0 +1,2 @@
+ error: number of processors supposed to run on:            4
+ error: number of MPI processors actually run on:            1
